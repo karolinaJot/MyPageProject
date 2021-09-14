@@ -1,3 +1,8 @@
+/* 
+Primary color: #545454
+Secondary color: #848484
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,5 +14,15 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #000000;
+    color: #545454;
+    padding: 15px;
+}
+
+.header {
+    height: 95vh;
+    background-image: url(./img/header_bg-img.jpg);
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
