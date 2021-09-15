@@ -30,6 +30,24 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
 
+.header-navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.header-navBar-el {
+    display: block;
+    margin-right: 2em;
+    padding-top: 1em;
+    font-size: 1.2em;
+}
+
+.header-navBar-el:hover{
+    background-color: #8d2c2c;
+    color: #fff;
+}
+
 .heading-primary {
     display: block;
     position: absolute;
@@ -57,7 +75,7 @@ body {
 }
 
 .heading-primary-main::before {
-    background: #fff;
+    background: #d3d3d3;
     animation: 
         typewriter 4s steps(23) 1s forwards;
 }
@@ -70,8 +88,6 @@ body {
         blink 750ms steps(23) infinite
 
 }
-
-
 
 
 .heading-primary-sub {
