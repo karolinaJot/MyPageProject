@@ -56,44 +56,29 @@ body {
     transform: translate(-27%, -125%);
 }
 
+
 .heading-primary-main {
-    display: block;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
     font-size: 1.5em;
     font-weight: 400;
-    letter-spacing: 3px;
-    position: relative;
-}
 
-.heading-primary-main::before,
-.heading-primary-main::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.heading-primary-main::before {
-    background: #d3d3d3;
     animation: 
-        typewriter 4s steps(23) 1s forwards;
+    typing 3.5s steps(40, end), 
+    blink-caret 0.75s step-end infinite;
 }
 
-.heading-primary-main::after {
-    width: 0.5em;
-    background: #000;
-    animation: 
-        typewriter 4s steps(23) 1s forwards,
-        blink 750ms steps(23) infinite
 
-}
 
 
 .heading-primary-sub {
     display: block;
     font-weight: 400;
     font-size: 0.8em;
+    letter-spacing: 0.023em;
     opacity: 0;
     transform: translateY(3rem);
     animation: showSub 2s ease 6s forwards;
@@ -106,17 +91,17 @@ body {
 
 }
 
-@keyframes typewriter {
-    to{
-        left: 100%;
-    }
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
 }
 
-@keyframes blink {
-    to {
-        background: transparent;
-    }
+@keyframes blink-caret {
+    from, to { border-color: transparent}
+    50% {border-color: black;}
 }
+
+
 
 @keyframes showSub {
     to {
