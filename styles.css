@@ -62,6 +62,9 @@ body {
     transform: translate(-27%, -125%);
 }
 
+.heading-primary:hover {
+    cursor: default;
+}
 
 .heading-primary-main {
     overflow: hidden;
