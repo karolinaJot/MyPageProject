@@ -26,8 +26,8 @@ body {
     background-image: url(./img/header_bg-img.jpg);
     background-position: 90%, -100px;
     background-size: cover;
-
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
 }
 
 .header-navBar {
@@ -38,14 +38,20 @@ body {
 
 .header-navBar-el {
     display: block;
-    margin-right: 2em;
-    padding-top: 1em;
-    font-size: 1.2em;
+    margin-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
 }
 
 .header-navBar-el:hover{
     background-color: #8d2c2c;
     color: #fff;
+    cursor: pointer;
+    animation: slide-down 1s ease-out;
 }
 
 .heading-primary {
@@ -68,7 +74,7 @@ body {
 
     animation: 
     typing 3.5s steps(40, end), 
-    blink-caret 0.75s step-end infinite;
+    blink 0.75s step-end infinite;
 }
 
 
@@ -81,7 +87,7 @@ body {
     letter-spacing: 0.023em;
     opacity: 0;
     transform: translateY(3rem);
-    animation: showSub 2s ease 6s forwards;
+    animation: show-sub 2s ease 4s forwards;
 
 }
 
@@ -91,19 +97,31 @@ body {
 
 }
 
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+    };
+    
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
 @keyframes typing {
     from {width: 0;}
     to {width: 100%;}
 }
 
-@keyframes blink-caret {
+@keyframes blink {
     from, to { border-color: transparent}
     50% {border-color: black;}
 }
 
 
 
-@keyframes showSub {
+@keyframes show-sub {
     to {
         opacity: 1;
         transform: translateY(0);
