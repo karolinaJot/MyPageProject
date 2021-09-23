@@ -137,9 +137,18 @@ body {
     }
 }
 
-.btn-box {
-    backface-visibility: hidden;
+@keyframes show-btn {
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.btn-box {
 }
 
 .btn:link,
@@ -150,15 +159,16 @@ body {
 
 
 .btn-red{
-    display:inline-block;
+    display: block;
     color: #fff;
     background-color: #8d2c2c;
-    opacity: 1;
     font-size: 1.2em;
     margin-top: 3rem;
-    /* animation: show-sub 1s ease-out 6s forwards; */
     padding: 0.5em 2em;
     width: 280px;
+    border-radius: 15px;
+    opacity: 0;
+    animation: show-btn 2s ease-in-out 6s forwards;
 }
 
 .btn:hover {
