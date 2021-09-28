@@ -4,6 +4,8 @@ Secondary color: #848484
 Dark color: #424242
 
 Red Prim: #8d2c2c;
+
+brown dark: #79675b
 */
 
 * {
@@ -23,8 +25,8 @@ body {
 
 .header {
     height: 95vh;
-    background-image: url(./img/header_bg-img.jpg);
-    background-position: 90%, -100px;
+    background-image: url(./img/SplitShire_Pixabay_molo.jpg);
+    background-position: 90%;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
@@ -48,7 +50,7 @@ body {
 }
 
 .header-navBar-el:hover{
-    background-color: #8d2c2c;
+    background-color: #79675b;
     color: #fff;
     cursor: pointer;
     animation: slide-down 1s ease-out;
@@ -57,10 +59,11 @@ body {
 .text-box{
     display: flex;
     flex-direction: column;
+    justify-items: center;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
-    transform: translate(-27%, -95%);
+    transform: translate(-50%, -97%);
 }
 
 
@@ -160,12 +163,15 @@ body {
 
 .btn-red{
     display: block;
+    text-align: center;
+    width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
     color: #fff;
-    background-color: #8d2c2c;
+    background-color:#79675b;
     font-size: 1.2em;
-    margin-top: 3rem;
+    margin-top: 2.3rem;
     padding: 0.5em 2em;
-    width: 280px;
     border-radius: 15px;
     opacity: 0;
     animation: show-btn 2s ease-in-out 6s forwards;
