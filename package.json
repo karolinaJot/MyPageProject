@@ -1,0 +1,22 @@
+{
+  "name": "mypageproject",
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolinaJot/MyPageProject.git"
+  },
+  "author": "Karolina Jaklik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karolinaJot/MyPageProject/issues"
+  },
+  "homepage": "https://github.com/karolinaJot/MyPageProject#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
