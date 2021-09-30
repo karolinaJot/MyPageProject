@@ -68,21 +68,6 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-.header {
-  height: 95vh;
-  background-image: url(../img/jplenio_Pixabay_fogg.jpg);
-  background-position: center;
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
-  .header__text-box {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -97%); }
-
 .navBar {
   display: flex;
   flex-direction: row;
@@ -99,6 +84,21 @@ body {
     color: #fff;
     cursor: pointer;
     animation: slide-down 1s ease-out; }
+
+.header {
+  height: 95vh;
+  background-image: url(../img/jplenio_Pixabay_fogg.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
+  .header__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -97%); }
 
 .heading-primary {
   display: block; }

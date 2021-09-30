@@ -1,0 +1,22 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+    &__el {
+        display: block;
+        margin-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        font-size: 1.2rem;
+    
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    }
+    
+    &__el:hover{
+        background-color: rgba($color-brown-dark, 0.7);
+        color: $color-white;
+        cursor: pointer;
+        animation: slide-down 1s ease-out;
+    }
+}
