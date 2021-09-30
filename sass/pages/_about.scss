@@ -1,0 +1,16 @@
+.section-about {
+    background-color: $color-yellow-light;
+    padding: 15.5rem 0;
+    margin-top: -15vh;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(to right, $color-brown-light-1, $color-brown-dark);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
