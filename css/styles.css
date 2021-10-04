@@ -116,21 +116,21 @@ body {
   width: 90%;
   position: relative; }
   .composition__img {
-    width: 30%;
+    width: 20%;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 10;
     transition: all .2s;
     outline-offset: 1.2rem; }
     .composition__img--p1 {
-      left: 0;
+      left: 3%;
       top: -1.2rem; }
     .composition__img--p2 {
       right: 0;
       top: 1.2rem; }
     .composition__img--p3 {
       left: 20%;
-      top: 8rem; }
+      top: 5rem; }
     .composition__img:hover {
       outline: 1rem solid #7a4b41;
       transform: scale(1.05) translateY(-0.4rem);

@@ -2,8 +2,8 @@
     width: 90%;
     position: relative;
 
-    &__img {
-        width: 30%;
+    &__img { 
+        width: 20%;
         box-shadow: 0 1rem 3rem rgba($color-black, .5);
         position: absolute; 
         z-index: 10;
@@ -11,7 +11,7 @@
         outline-offset: 1.2rem;
 
         &--p1{
-            left: 0;
+            left: 3%;
             top: -1.2rem;
          }
 
@@ -22,7 +22,7 @@
 
         &--p3{
             left: 20%; 
-            top: 8rem;
+            top: 5rem;   
         } 
 
         &:hover {
