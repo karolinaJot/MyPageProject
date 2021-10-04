@@ -113,10 +113,10 @@ body {
   transform: translateY(0); }
 
 .composition {
-  width: 100%;
+  width: 90%;
   position: relative; }
   .composition__img {
-    width: 55%;
+    width: 30%;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 10;
