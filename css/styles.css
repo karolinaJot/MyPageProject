@@ -250,3 +250,8 @@ body {
 
 .paragraph {
   font-weight: 400; }
+
+.btn-box {
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-top: 3rem; }
