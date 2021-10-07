@@ -1,0 +1,23 @@
+.section-details {
+    background-image: linear-gradient( 
+        to right,
+        rgba($color-brown-light-1, .8),
+        rgba($color-brown-dark, .8)),  
+    url(../img/jplenio_Pixabay_fogg.jpg);
+           
+    // background-image: url(../img/jplenio_Pixabay_fogg.jpg);
+    background-position: center;
+    background-size: cover;
+           
+ 
+}
+
+
+.features-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0 2rem;
+
+}

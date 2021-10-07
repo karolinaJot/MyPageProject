@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 } 
 
 .heading-secondary {
@@ -24,13 +25,6 @@
     flex-direction: row;
     justify-content: space-between;
 
-    &__text{
-    
-    }
-
-    &__img{
-    
-    }
 }
 
 .heading-tertiary {
@@ -41,3 +35,8 @@
     font-weight: 400;
 }
 
+.btn-box {
+    align-self: flex-start;
+    margin-left: 2rem; 
+    margin-top: 3rem;  
+}
