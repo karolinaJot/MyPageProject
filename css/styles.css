@@ -155,9 +155,7 @@ body {
     margin: 2rem 0; }
     .feature-box__icon img {
       width: 100%;
-      display: inline-block;
-      background-image: linear-gradient(to right, #d1b291, #bc977b, #a67d66, #906353, #7a4b41);
-      -webkit-background-clip: text; }
+      display: inline-block; }
 
 .navBar {
   display: flex;
