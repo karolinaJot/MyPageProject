@@ -58,11 +58,17 @@ body {
 .u-margin-bottom-1 {
   margin-bottom: 1rem; }
 
+.u-margin-top-5 {
+  margin-top: 5rem; }
+
 .u-margin-left-2 {
   margin-left: 2rem; }
 
 .u-margin-right-2 {
   margin-right: 2rem; }
+
+.u-padding-top-5 {
+  padding-top: 5rem; }
 
 .u-column-2 {
   flex: 1; }
@@ -243,16 +249,16 @@ body {
 
 .section-details {
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(209, 178, 145, 0.8), rgba(122, 75, 65, 0.8)), url(../img/jplenio_Pixabay_fogg.jpg);
+  background-image: linear-gradient(to right, rgba(208, 177, 144, 0.8), rgba(122, 75, 65, 0.8)), url(../img/jplenio_Pixabay_fogg.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  transform: skewY(-7deg);
+  transform: skewY(-6deg);
   margin-top: -9rem; }
   .section-details__content-container {
     margin: auto 2rem;
-    transform: skewY(7deg); }
+    transform: skewY(6deg); }
   .section-details__text {
     padding-bottom: 2rem; }
 
@@ -275,7 +281,7 @@ body {
   font-weight: 700;
   display: inline-block;
   color: transparent;
-  background-image: linear-gradient(to right, #d1b291, #bc977b, #a67d66, #906353, #7a4b41);
+  background-image: linear-gradient(to right, #d0b190, #bc977b, #a67d66, #906353, #7a4b41);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   cursor: default; }
@@ -296,3 +302,47 @@ body {
   align-self: flex-start;
   margin-left: 2rem;
   margin-top: 3rem; }
+
+.section-projects {
+  border: 1px solid red;
+  height: 100vh;
+  background-color: #f9f5ea;
+  padding: 15.5rem 2rem 2rem 2rem;
+  margin-top: -15vh;
+  display: flex;
+  flex-direction: column; }
+
+.projects-container {
+  border: 1px solid black;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.project-card {
+  perspective: 1600px;
+  -moz-perspective: 1600px;
+  border: 1px solid green;
+  position: relative;
+  width: 30%;
+  height: 100%; }
+  .project-card__side {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.45); }
+    .project-card__side--front {
+      background-color: #fff; }
+    .project-card__side--back {
+      transform: rotateY(180deg); }
+      .project-card__side--back-1 {
+        background-image: linear-gradient(to right top, #2F4858, #59A5D3); }
+  .project-card:hover .project-card__side--front {
+    transform: rotateY(180deg); }
+  .project-card:hover .project-card__side--back {
+    transform: rotateY(0); }
