@@ -1,16 +1,16 @@
 .feature-box {
-    border: 1px solid black;
-    height: 50vh;
+    padding: 0 .7rem;
+    height: 40vh; 
     flex: 1;
     max-width: 20%; 
     background-color: rgba($color-white, .7);
     text-align: center; 
     border-radius: 3px;
     box-shadow: 0 1rem 3rem rgba($color-black, .15);
+    transition: transform .3s;
 
     &__icon {
-        border: 1px solid yellow;
-        display: inline-block;
+        display: inline-block;  
         width: 20%;
         margin: 2rem 0;
   
@@ -18,14 +18,11 @@
         img { 
             width: 100%;  
             display: inline-block;
-    // filter: transparent; 
-    background-image: linear-gradient(to right, $color-brown-light-1, #bc977b, #a67d66, #906353,  $color-brown-dark);
-    // -webkit-text-filter-color: transparent;
-    -webkit-background-clip: text; 
         }
     }  
-     
-    &__text {
 
+    &:hover {
+        transform: translateY(-.4rem) scale(1.04);
     }
-}          
+    
+}           
