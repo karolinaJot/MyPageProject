@@ -37,14 +37,19 @@
         top: 0;
         left: 0;
         backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1rem 3rem rgba($color-black, .45);
 
         &--front {
-            background-color: orchid;
+            background-color: $color-white;
         }
 
         &--back {
-            background-color: palegoldenrod;
             transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient( to right top, $color-blue-dark-grad1, $color-blue-light-grad1);
+            }
         }
     }
 
