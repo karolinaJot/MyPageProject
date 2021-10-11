@@ -22,6 +22,38 @@
        opacity: 0;
        animation: show-btn 2s ease-in-out 5s forwards;
    }
+
+   &--blue {
+        font-size: 1.4rem;
+        font-weight: 500; 
+        padding: .5rem;
+        background-color: $color-white;
+        border-radius: 50px; 
+        display: block;
+        color: $color-blue-dark-grad1;
+        
+    }
+    
+    &--brown-2 {
+       font-size: 1.4rem;
+       font-weight: 500; 
+       padding: .5rem;
+       background-color: $color-white;
+       border-radius: 50px; 
+       display: block;
+       color: $color-brown-dark; 
+
+   }
+    &--green {
+       font-size: 1.4rem;
+       font-weight: 500; 
+       padding: .5rem;
+       background-color: $color-white;
+       border-radius: 50px; 
+       display: block;
+       color: $color-green-dark-grad2; 
+
+   }
    
    &:hover {
        transform: translateY(-3px);
