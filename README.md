@@ -13,3 +13,6 @@ Stay tuned for more!
 
 
 ![aboutMe_details](https://user-images.githubusercontent.com/43984219/136711373-ab97340d-2b5c-487b-a938-837d92a2ef07.png)
+
+
+![projects](https://user-images.githubusercontent.com/43984219/136797640-7c21191d-1d0d-4fc8-8bf2-ecf40b89aa96.png)
