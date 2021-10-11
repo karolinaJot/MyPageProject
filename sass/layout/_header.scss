@@ -3,7 +3,8 @@
     background-image: url(../img/jplenio_Pixabay_fogg.jpg);
     background-position: center;
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
 
     &__text-box{
         display: flex;
