@@ -1,16 +1,20 @@
 .section-projects{
-    height: 150vh; 
+    height: 100vh; 
     background-color: $color-yellow-light;
-    padding: 15.5rem 2rem 2rem 2rem;
-    margin-top: -15vh;
+    padding: 0 2rem;
+    // margin-top: -15vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;  
+ 
+    h2 {
+        text-align: center;
+    }
 } 
 
 
 
 .projects-container{
-    height: 80%;
+    min-height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,6 +29,7 @@
     position: relative;
     width: 30%; 
     height: 100%;
+    font-size: .8rem; 
     
     &__side{
         width: 100%;  
@@ -42,6 +47,7 @@
             background-color: $color-white;
             display: flex;
             flex-direction: column;
+            height: 100%;
         }
 
         &--back {
@@ -88,9 +94,12 @@
 
 
     &__picture {
+        width: 80%;
+        height: 30%; 
+        margin: 3px auto;
         background-size: cover; 
-        background-position: center; 
-        height: 16rem;  
+        background-position-x: center;
+        background-position-y: top;
         box-shadow: 0 5px 5px rgba($color-black, .45); 
         //----- background-blended-mode jest wykozystywany do nakładania warstw w backgrund-image -------
         // background-blend-mode: screen;
@@ -114,12 +123,12 @@
     }
 
     &__heading {
-        font-size: 1.6rem;  
+        font-size: 1.4rem;   
         font-weight: 100;
         text-transform: uppercase;
         color: $color-white;
         width: 60%;  
-        padding: 1.3rem 0;
+        padding: 1.3rem 0 1rem; 
         text-align: center; 
         margin: 0 auto;
     }
@@ -153,4 +162,35 @@
         padding: 3px 5px; 
         text-align: justify; 
     }
+}
+
+.button-box{
+    margin: 2.4rem auto; 
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+    
+    a {
+        color: $color-white;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: .4rem .8rem;
+        border-radius: 3px;
+        background-image: linear-gradient(to right top,
+                rgba($color-brown-dark, 1), 
+                rgba($color-brown-light-1, 1));  
+
+        span {
+            padding-left: .4rem; 
+            height: 1.5rem; 
+
+            img {
+                height: 100%;
+
+            }
+        }
+     }
+
 }

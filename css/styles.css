@@ -61,6 +61,9 @@ body {
 .u-margin-top-5 {
   margin-top: 5rem; }
 
+.u-margin-top-3 {
+  margin-top: 3rem; }
+
 .u-margin-left-2 {
   margin-left: 2rem; }
 
@@ -93,8 +96,9 @@ body {
   animation: show-btn 2s ease-in-out 5s forwards; }
 
 .btn--blue {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 500;
+  text-align: center;
   padding: .5rem;
   background-color: #fff;
   border-radius: 50px;
@@ -102,8 +106,9 @@ body {
   color: #2F4858; }
 
 .btn--brown-2 {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 500;
+  text-align: center;
   padding: .5rem;
   background-color: #fff;
   border-radius: 50px;
@@ -111,8 +116,9 @@ body {
   color: #7a4b41; }
 
 .btn--green {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 500;
+  text-align: center;
   padding: .5rem;
   background-color: #fff;
   border-radius: 50px;
@@ -332,15 +338,16 @@ body {
   margin-top: 3rem; }
 
 .section-projects {
-  height: 150vh;
+  height: 100vh;
   background-color: #f9f5ea;
-  padding: 15.5rem 2rem 2rem 2rem;
-  margin-top: -15vh;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column; }
+  .section-projects h2 {
+    text-align: center; }
 
 .projects-container {
-  height: 80%;
+  min-height: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -350,7 +357,8 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   width: 30%;
-  height: 100%; }
+  height: 100%;
+  font-size: .8rem; }
   .project-card__side {
     width: 100%;
     height: 100%;
@@ -365,7 +373,8 @@ body {
     .project-card__side--front {
       background-color: #fff;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      height: 100%; }
     .project-card__side--back {
       transform: rotateY(180deg);
       color: #fff; }
@@ -391,9 +400,12 @@ body {
   .project-card:hover .project-card__side--back {
     transform: rotateY(0); }
   .project-card__picture {
+    width: 80%;
+    height: 30%;
+    margin: 3px auto;
     background-size: cover;
-    background-position: center;
-    height: 16rem;
+    background-position-x: center;
+    background-position-y: top;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.45); }
     .project-card__picture--1 {
       background-image: url(/img/projects_screens/React_app_MainP_screen.png); }
@@ -402,12 +414,12 @@ body {
     .project-card__picture--3 {
       background-image: url(/img/projects_screens/flashcards_M_screen.png); }
   .project-card__heading {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 100;
     text-transform: uppercase;
     color: #fff;
     width: 60%;
-    padding: 1.3rem 0;
+    padding: 1.3rem 0 1rem;
     text-align: center;
     margin: 0 auto; }
   .project-card__heading-span {
@@ -423,3 +435,22 @@ body {
   .project-card__details {
     padding: 3px 5px;
     text-align: justify; }
+
+.button-box {
+  margin: 2.4rem auto;
+  font-size: 1.2rem;
+  font-weight: 400; }
+  .button-box a {
+    color: #fff;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .4rem .8rem;
+    border-radius: 3px;
+    background-image: linear-gradient(to right top, #7a4b41, #d0b190); }
+    .button-box a span {
+      padding-left: .4rem;
+      height: 1.5rem; }
+      .button-box a span img {
+        height: 100%; }
