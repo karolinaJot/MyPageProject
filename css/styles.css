@@ -1,3 +1,18 @@
+/* 
+0-600px:       phone
+600-900px:     tablet portrait
+900-1200px:    tablet landscape
+[1200 - 1800]  is where our normal styles apply - desctop frist approuche 
+1800px +:      big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 @keyframes slide-down {
   from {
     opacity: 0; }
@@ -41,10 +56,24 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 16px; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 20px; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 12px; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 10px; } }
+  @media (max-width: 37.3em) {
+    html {
+      font-size: 8px; } }
+
 body {
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
   color: #545454;
   padding: 15px; }
