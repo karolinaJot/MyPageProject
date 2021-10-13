@@ -1,11 +1,13 @@
 /* 
-0-600px:       phone
+0-420px        small phone
+420-600px:     phone
 600-900px:     tablet portrait
 900-1200px:    tablet landscape
 [1200 - 1800]  is where our normal styles apply - desctop frist approuche 
 1800px +:      big desktop
 
 $breakpoint argument choices:
+- phone-small
 - phone
 - tab-port
 - tab-land
@@ -30,7 +32,7 @@ $breakpoint argument choices:
   from, to {
     border-color: transparent; }
   50% {
-    border-color: #000; } }
+    border-color: #545454; } }
 
 @keyframes show-sub {
   to {
@@ -70,13 +72,19 @@ html {
   @media (max-width: 37.3em) {
     html {
       font-size: 8px; } }
+  @media (max-width: 26.25em) {
+    html {
+      font-size: 6px; } }
 
 body {
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #545454;
-  padding: 15px; }
+  padding: 1rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .u-margin-bottom-5 {
   margin-bottom: 5rem; }
@@ -226,6 +234,12 @@ body {
       display: inline-block; }
   .feature-box:hover {
     transform: translateY(-0.4rem) scale(1.04); }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      max-width: 80%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem; } }
 
 .navBar {
   display: flex;
@@ -245,7 +259,7 @@ body {
     animation: slide-down 1s ease-out; }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: url(../img/jplenio_Pixabay_fogg.jpg);
   background-position: center;
   background-size: cover;
@@ -266,7 +280,7 @@ body {
     cursor: default; }
   .heading-primary--main {
     overflow: hidden;
-    border-right: 0.15em solid #000;
+    border-right: 0.15em solid #545454;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.1em;
@@ -324,17 +338,24 @@ body {
     transform: skewY(6deg); }
   .section-details__text {
     padding-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .section-details {
+      height: auto; } }
 
 .features-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
+  @media (max-width: 56.25em) {
+    .features-container {
+      display: felx;
+      flex-direction: column; } }
 
 .section-about {
   background-color: #f9f5ea;
-  padding: 15.5rem 0;
-  margin-top: -15vh;
+  padding: 10rem 0;
+  margin-top: -20vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -347,7 +368,8 @@ body {
   background-image: linear-gradient(to right, #d0b190, #bc977b, #a67d66, #906353, #7a4b41);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  cursor: default; }
+  cursor: default;
+  text-align: center; }
 
 .content-about {
   width: 100%;
@@ -367,19 +389,25 @@ body {
   margin-top: 3rem; }
 
 .section-projects {
-  height: 100vh;
+  height: 160vh;
   background-color: #f9f5ea;
   padding: 0 2rem;
   display: flex;
   flex-direction: column; }
-  .section-projects h2 {
-    text-align: center; }
+  @media (max-width: 56.25em) {
+    .section-projects {
+      height: 200vh; } }
 
 .projects-container {
   min-height: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  @media (max-width: 56.25em) {
+    .projects-container {
+      display: felx;
+      flex-direction: column;
+      min-height: 100%; } }
 
 .project-card {
   perspective: 150rem;
@@ -436,6 +464,9 @@ body {
     background-position-x: center;
     background-position-y: top;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.45); }
+    @media (max-width: 56.25em) {
+      .project-card__picture {
+        height: 30rem; } }
     .project-card__picture--1 {
       background-image: url(/img/projects_screens/React_app_MainP_screen.png); }
     .project-card__picture--2 {
@@ -451,6 +482,9 @@ body {
     padding: 1.3rem 0 1rem;
     text-align: center;
     margin: 0 auto; }
+    @media (max-width: 56.25em) {
+      .project-card__heading {
+        width: 25%; } }
   .project-card__heading-span {
     padding: .6rem 1rem;
     -webkit-box-decoration-break: clone;
@@ -462,8 +496,16 @@ body {
     .project-card__heading-span--3 {
       background-image: linear-gradient(to right top, rgba(0, 109, 96, 0.85), rgba(68, 206, 190, 0.85)); }
   .project-card__details {
-    padding: 3px 5px;
+    padding: 0 2rem 2rem;
     text-align: justify; }
+    @media (max-width: 56.25em) {
+      .project-card__details {
+        font-size: 1rem; } }
+  @media (max-width: 56.25em) {
+    .project-card {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 2rem; } }
 
 .button-box {
   margin: 2.4rem auto;
