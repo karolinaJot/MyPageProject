@@ -6,6 +6,17 @@
     background-size: cover;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+    
+    @include respond (tab-port) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); 
+    } 
+    
+    @include respond(phone-small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); 
+
+    }
 
     &__text-box{
         display: flex;

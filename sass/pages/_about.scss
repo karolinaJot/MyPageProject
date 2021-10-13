@@ -1,10 +1,19 @@
 .section-about {
     background-color: $color-yellow-light;
-    padding: 10rem 0;
-    margin-top: -20vh; 
+    padding: 5rem 0;
+    // margin-top: -20vh; 
+    margin-top: -6rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include respond(tab-port) {
+        padding-top: 8rem; 
+    } 
+
+    @include respond(phone-small) {
+        padding-top: 30rem;
+    }
     
 } 
 
@@ -25,6 +34,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include respond (tab-port) {
+        display: flex;
+        flex-direction: column; 
+    } 
 
 }
 
