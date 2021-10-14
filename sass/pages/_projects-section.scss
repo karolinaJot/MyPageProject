@@ -1,8 +1,8 @@
 .section-projects{
-    height: 160vh; 
+    height: 140vh; 
     background-color: $color-yellow-light;
-    padding: 0 2rem;
-    // margin-top: -15vh;
+    padding: 8rem 2rem;
+    margin-top: -6rem; 
     display: flex;
     flex-direction: column;  
 
@@ -15,7 +15,7 @@
 
 
 .projects-container{
-    min-height: 60%;
+    height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,7 +24,11 @@
     @include respond(tab-port) {
         display: felx;
         flex-direction: column;
-        min-height: 100%;
+        height: 100%; 
+     }
+
+     @include respond(phone-small) {
+         height: 50%;
      }
 
 }
