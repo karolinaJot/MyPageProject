@@ -1,5 +1,5 @@
 .section-details {
-    height: 100vh;
+    height: auto; 
     background-image: linear-gradient( 
         to right,
         rgba($color-brown-light-1, .8),
@@ -9,19 +9,24 @@
     background-size: cover;      
     display: flex;  
     flex-direction: column;      
-    transform: skewY(-6deg);     
+    transform: skewY(-6deg);      
 
-    margin-top: -9rem;  
+    margin-top: -9rem;
+    padding: 8rem 0;   
 
     &__content-container {             
         margin: auto 2rem;   
-        transform: skewY(6deg); 
+        transform: skewY(6deg);  
     }
 
     &__text {
         padding-bottom: 2rem;      
     }
-           
+
+
+    @include respond(tab-port) {
+        height: auto;
+     }
  
 }
 
@@ -31,5 +36,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;  
+
+    @include respond(tab-port) {
+        display: felx;
+        flex-direction: column;
+     }
 
 }
