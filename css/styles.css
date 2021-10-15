@@ -369,17 +369,27 @@ body {
   text-align: center; }
 
 .navigation__item {
-  margin: 1rem; }
+  margin: 2rem; }
 
-.navigation__link:link, .navigation__linkvisited {
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
   font-size: 2rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, orangered 0%, orangered 50%, #fff 50%);
-  background-size: 100%; }
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 240%;
+  transition: all .3s; }
+  .navigation__link:link span, .navigation__link:visited span {
+    display: inline-block;
+    margin-right: 1rem; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #7a4b41;
+  transform: translateX(0.8rem); }
 
 .section-details {
   height: auto;
