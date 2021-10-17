@@ -231,10 +231,19 @@
         background-image: linear-gradient(to right top,
                 rgba($color-brown-dark, 1), 
                 rgba($color-brown-light-1, 1));  
+        
+        @include respond(phone-small) {
+            padding: .8rem 3rem;
+           font-size: 2rem;
+        }
 
         span {
             padding-left: .4rem; 
             height: 1.5rem; 
+
+            @include respond(phone-small) {
+                height: 3rem; 
+            }
 
             img {
                 height: 100%;

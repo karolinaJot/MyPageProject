@@ -403,6 +403,9 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(50); }
+  @media (max-width: 26.25em) {
+    .navigation__checkbox:checked ~ .navigation__background {
+      transform: scale(70); } }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -744,8 +747,15 @@ body {
     padding: .4rem .8rem;
     border-radius: 10rem;
     background-image: linear-gradient(to right top, #7a4b41, #d0b190); }
+    @media (max-width: 26.25em) {
+      .button-box a {
+        padding: .8rem 3rem;
+        font-size: 2rem; } }
     .button-box a span {
       padding-left: .4rem;
       height: 1.5rem; }
+      @media (max-width: 26.25em) {
+        .button-box a span {
+          height: 3rem; } }
       .button-box a span img {
         height: 100%; }
