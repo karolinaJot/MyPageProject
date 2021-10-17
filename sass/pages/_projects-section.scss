@@ -1,13 +1,25 @@
 .section-projects{
-    height: 140vh; 
+    // height: 140vh; 
+    height: 100vh; 
     background-color: $color-yellow-light;
     padding: 8rem 2rem;
+    padding-bottom: 0;
     margin-top: -6rem; 
     display: flex;
     flex-direction: column;  
 
+    @include respond(tab-land) {
+        height: 90vh
+    }
+
     @include respond(tab-port) {
         height: 200vh;
+     }
+
+     @include respond(phone-small) {
+        //  height: 140vh;
+        height: auto;
+         padding-bottom: 3rem;
      }
 
 } 
@@ -15,11 +27,15 @@
 
 
 .projects-container{
-    height: 60%;
+    // height: 60%;
+    height: 60vh;  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+    @include respond(tab-land) {
+        height: 50vh;
+    }
 
     @include respond(tab-port) {
         display: felx;
@@ -28,7 +44,8 @@
      }
 
      @include respond(phone-small) {
-         height: 50%;
+        //  height: 50%;
+        height: 100vh
      }
 
 }
@@ -198,7 +215,7 @@
 }
 
 .button-box{
-    margin: 2.4rem auto; 
+    margin: 3rem auto; 
     font-size: 1.2rem;
     font-weight: 400;
     
@@ -209,15 +226,24 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: .4rem .8rem;
-        border-radius: 3px;
+        padding: .4rem .8rem; 
+        border-radius: 10rem;
         background-image: linear-gradient(to right top,
                 rgba($color-brown-dark, 1), 
                 rgba($color-brown-light-1, 1));  
+        
+        @include respond(phone-small) {
+            padding: .8rem 3rem;
+           font-size: 2rem;
+        }
 
         span {
             padding-left: .4rem; 
             height: 1.5rem; 
+
+            @include respond(phone-small) {
+                height: 3rem; 
+            }
 
             img {
                 height: 100%;

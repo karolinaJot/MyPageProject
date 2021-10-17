@@ -14,13 +14,23 @@
        margin-right: auto;
        margin-left: auto;
        color: $color-white;
-       background-color: rgba($color-brown-dark, .7);
+    //    background-color: rgba($color-brown-dark, .7);
+    background-image: linear-gradient(to top,
+                rgba($color-brown-dark, 1), 
+                rgba($color-brown-light-1, 1));  
        font-size: 1.2em;
-       margin-top: 2.3rem;
-       padding: 0.5em 2em;
-       border-radius: 15px;
+       margin-top: 5rem; 
+       padding: .5em 2em;
+       border-radius: 10rem; 
        opacity: 0;
        animation: show-btn 2s ease-in-out 5s forwards;
+
+       @include respond(phone) {
+           padding: .8rem 3rem;
+           font-size: 2rem;
+           width: 30rem;
+           
+       }
    }
 
    &--blue {
@@ -41,7 +51,7 @@
        text-align: center; 
        padding: .5rem;
        background-color: $color-white;
-       border-radius: 50px; 
+       border-radius: 10rem; 
        display: block;
        color: $color-brown-dark; 
 

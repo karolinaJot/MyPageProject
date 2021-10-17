@@ -86,8 +86,12 @@
         }
     }
     
-    &__checkbox:checked ~ &__background {
+    &__checkbox:checked ~ &__background {    
         transform: scale(50); 
+
+        @include respond(phone-small) {
+            transform: scale(70);
+        }
     }
     
     &__checkbox:checked ~ &__nav {
