@@ -1,15 +1,21 @@
 .header {
-    height: 100vh;
+    height: 95vh;
     background-image: url(../img/jplenio_Pixabay_fogg_1280x720.jpg);
     background-position: center;
     background-size: cover;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);  
     
 
+    // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    //     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);  
+    // }
+    
     @media (min-resolution: 192dpi) and (min-width: 37.5em),
+            (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
             (min-width: 75em) {
-        background-image: url(../img/jplenio_Pixabay_fogg.jpg);
+        background-image: url(../img/walkway-918900_1920.jpg); 
     }
 
     @include respond (tab-port) {
@@ -31,6 +37,13 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -97%);
+
+        background-color: rgba($color-white, .9);   
+        border: .5rem solid $color-white;   
+        border-radius: 3px;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .4); 
+        padding: 4rem;  
+
     }
     
 }
