@@ -39,6 +39,9 @@
         transform: translate(-50%, -97%);
 
         background-color: rgba($color-white, .9);   
+        border: .5rem solid $color-white;   
+        border-radius: 3px;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .4); 
         padding: 4rem;  
 
     }
