@@ -7,23 +7,51 @@
    }
    
    
-   &--brown{
+//    &--brown{
+//        display: block;
+//        text-align: center;
+//        width: 20rem;
+//        margin-right: auto;
+//        margin-left: auto;
+//        color: $color-white;
+//     //    background-color: rgba($color-brown-dark, .7);
+//     background-image: linear-gradient(to top,
+//                 rgba($color-brown-dark, 1), 
+//                 rgba($color-brown-light-1, 1));  
+//        font-size: 1.2em;
+//        margin-top: 5rem; 
+//        padding: .5em 2em;
+//        border-radius: 10rem; 
+//        opacity: 0;
+//        animation: show-btn 2s ease-in-out 5s forwards;
+//        transform: skew(6deg);
+
+//        @include respond(phone) {
+//            padding: .8rem 3rem;
+//            font-size: 2rem;
+//            width: 30rem;
+           
+//        }
+//    }
+
+// New design
+   &--blue-prim{
        display: block;
        text-align: center;
        width: 20rem;
        margin-right: auto;
        margin-left: auto;
        color: $color-white;
-    //    background-color: rgba($color-brown-dark, .7);
-    background-image: linear-gradient(to top,
-                rgba($color-brown-dark, 1), 
-                rgba($color-brown-light-1, 1));  
+       background-image: linear-gradient(
+           to bottom, $color-blue-dark1, #1a526e,
+            #156b88, #0c85a0, $color-blue-light);   
        font-size: 1.2em;
        margin-top: 5rem; 
        padding: .5em 2em;
        border-radius: 10rem; 
        opacity: 0;
        animation: show-btn 2s ease-in-out 5s forwards;
+       transform: skew(6deg);
 
        @include respond(phone) {
            padding: .8rem 3rem;

@@ -1,16 +1,17 @@
 .heading-primary {
     display: block;
+    transform: skew(6deg);
     &:hover {
         cursor: default;
     }
     
     &--main {
         overflow: hidden;
-        border-right: 0.15em solid $color-grey-dark;
+        border-right: 0.25rem solid $color-grey-dark;
         white-space: nowrap;
         margin: 0 auto;
-        letter-spacing: 0.1em;
-        font-size: 1.5em;
+        letter-spacing: 0.3rem;
+        font-size: 3rem;
         font-weight: 400;
     
         animation: 
@@ -21,7 +22,7 @@
     &--sub {
         display: block;
         font-weight: 400;
-        font-size: 0.8em;
+        font-size: 1.6rem;
         letter-spacing: 0.023em;
         opacity: 0;
         transform: translateY(3rem);
