@@ -261,11 +261,14 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url(../img/jplenio_Pixabay_fogg.jpg);
+  background-image: url(../img/jplenio_Pixabay_fogg_1280x720.jpg);
   background-position: center;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+    .header {
+      background-image: url(../img/jplenio_Pixabay_fogg.jpg); } }
   @media (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
@@ -524,7 +527,7 @@ body {
 
 .section-details {
   height: auto;
-  background-image: linear-gradient(to right, rgba(208, 177, 144, 0.8), rgba(122, 75, 65, 0.8)), url(../img/jplenio_Pixabay_fogg.jpg);
+  background-image: linear-gradient(to right, rgba(208, 177, 144, 0.8), rgba(122, 75, 65, 0.8)), url(../img/jplenio_Pixabay_fogg_1280x720.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -532,6 +535,9 @@ body {
   transform: skewY(-6deg);
   margin-top: -9rem;
   padding: 8rem 0; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+    .section-details {
+      background-image: linear-gradient(to right, rgba(208, 177, 144, 0.8), rgba(122, 75, 65, 0.8)), url(../img/jplenio_Pixabay_fogg.jpg); } }
   .section-details__content-container {
     margin: auto 2rem;
     transform: skewY(6deg); }
