@@ -4,6 +4,13 @@
     &:hover {
         cursor: default;
     }
+
+    @include respond(tab-port) {
+        transform: skew(4deg);  
+    }
+    @include respond(phone) {
+        transform: skew(0);   
+    }
     
     &--main {
         overflow: hidden;
@@ -13,10 +20,15 @@
         letter-spacing: 0.3rem;
         font-size: 3rem;
         font-weight: 400;
+        text-align: center;
     
         animation: 
         typing 3.5s steps(40, end), 
         blink 0.75s step-end infinite;
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        } 
     }
     
     &--sub {
@@ -27,6 +39,10 @@
         opacity: 0;
         transform: translateY(3rem);
         animation: show-sub 2s ease 4s forwards;
+
+        @include respond(phone) {
+            text-align: center;
+        }
     }
     
     &--sub-extra {

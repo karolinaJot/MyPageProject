@@ -1,33 +1,61 @@
 .section-about {
-    background-color: $color-orange-light1; 
-    padding: 4rem 0 10rem 0 ;    
+    border: 3px solid green;
+    
+    background-image: linear-gradient( 
+        to right,
+        rgba($color-orange-light2, .8),
+        rgba($color-orange-light1, .8)),  
+    url(../img/ian-dooley-baloons-unsplash.jpg);  
+    background-position: center; 
+    background-size: cover;    
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3rem 0;
 
     
-    @include respond(tab-port) {
-        padding-top: 14rem;  
+    @include respond(tab-port) { 
     } 
 
     @include respond(phone-small) {
-        padding-top: 16rem;
+        
     }
 
     @include respond(desktop) {
-        padding: 15rem 0 10rem 0 ;
+        
+    }
+    
+    &__project-container {
+        background-color: rgba($color-white, .8); 
+        width: 90%;
+        margin: 2rem auto;
+        padding: 2rem 1.5rem; 
+        border-radius: 3px;
+        box-shadow: 0 .8rem 1.2rem rgba($color-black, .4);
+        // color: $color-blue-dark1;
+        color: $color-blue-dark1;
+    }
+
+    &__project-title {
+        display: block;
+        text-align: center;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+
     }
 } 
+
 
 .heading-secondary {
     font-size: 2rem;
     font-weight: 700;
     display: inline-block;
     color: transparent;
-    background-image: linear-gradient(to right,  $color-blue-dark1, #1a526e,
-    #156b88, #0c85a0, $color-blue-light);
+    background-image: linear-gradient(to left,  $color-blue-dark1, #1a526e,
+    #156b88, #0c85a0, $color-blue-light); 
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;  
+    background-clip: text;
     cursor: default;
     text-align: center; 
 } 
@@ -35,13 +63,36 @@
 .content-about {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 
     @include respond (tab-port) {
         display: flex;
         flex-direction: column; 
     } 
+
+    &__intro {
+        border: 1px solid red;
+        display: flex;
+    }
+
+    &__text {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column; 
+        padding-right: 1rem;
+        background-color: orangered;
+    }
+
+    &__img {
+        border: 1px solid blue;
+        background-color: orchid;
+    }
+
+    &__details {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
 
 }
 
@@ -53,8 +104,59 @@
     font-weight: 400;
 }
 
-.btn-box {
-    align-self: flex-start;
-    margin-left: 2rem; 
-    margin-top: 3rem;  
-}
+// .btn-box {
+//     align-self: flex-start;
+//     margin-left: 2rem; 
+//     margin-top: 3rem;  
+// }
+
+.button-box{
+        margin: 3rem auto; 
+        font-size: 1.2rem;
+        font-weight: 400;
+    
+        
+        
+        
+        a {
+            color: $color-white;
+            display: block;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: .4rem .8rem; 
+            border-radius: 10rem;
+            background-image: linear-gradient(to right top,
+            rgba($color-brown-dark, 1), 
+            rgba($color-brown-light-1, 1));  
+    
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba($color-black, 0.2);
+                }
+            
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba($color-black, 0.2);
+                }
+            
+            @include respond(phone) {
+                padding: .8rem 3rem;
+               font-size: 2rem;
+            }
+    
+            span {
+                padding-left: .4rem; 
+                height: 1.5rem; 
+    
+                @include respond(phone) {
+                    height: 3rem; 
+                }
+    
+                img {
+                    height: 100%;
+    
+                }
+            }
+         }
+        }
