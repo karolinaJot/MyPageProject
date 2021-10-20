@@ -9,9 +9,8 @@
     background-size: cover;      
     display: flex;  
     flex-direction: column;      
-    transform: skewY(-6deg);      
+    // transform: skewY(-6deg);      
 
-    margin-top: -9rem;
     padding: 8rem 0;   
 
     @media (min-resolution: 192dpi) and (min-width: 37.5em),
@@ -25,7 +24,7 @@
 
     &__content-container {             
         margin: auto 2rem;   
-        transform: skewY(6deg);  
+        // transform: skewY(6deg);  
     }
 
     &__text {

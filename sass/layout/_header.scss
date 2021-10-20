@@ -1,10 +1,13 @@
 .header {
     height: 95vh;
-    background-image: url(../img/jplenio_Pixabay_fogg_1280x720.jpg);
+    background-image: url(../img/ian-dooley-baloons-unsplash.jpg); 
     background-position: center;
     background-size: cover;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);  
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
     // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -15,34 +18,49 @@
     @media (min-resolution: 192dpi) and (min-width: 37.5em),
             (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
             (min-width: 75em) {
-        background-image: url(../img/walkway-918900_1920.jpg); 
+        background-image: url(../img/ian-dooley-baloons-unsplash.jpg);  
     }
 
-    @include respond (tab-port) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); 
-    } 
+    // @include respond (tab-port) {
+    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    //     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); 
+    // } 
     
-    @include respond(phone-small) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); 
+    // @include respond(phone-small) {
+    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+    //     clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); 
 
-    }
+    // }
 
     &__text-box{
         display: flex;
         flex-direction: column;
         justify-items: center;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -97%);
+        // position: absolute;
+        // top: 55%;
+        // left: 50%;
+        // transform: translate(-50%, -97%);  
 
         background-color: rgba($color-white, .9);   
-        border: .5rem solid $color-white;   
+        // border: .5rem solid $color-white;   
         border-radius: 3px;
         box-shadow: 0 .5rem 1rem rgba($color-black, .4); 
         padding: 4rem;  
+        transform: skew(-6deg);
+        
+        @include respond(tab-port) {
+            transform: skew(-4deg); 
+        }
+
+        @include respond(phone) {
+            transform: skew(0);
+            width: 95%;  
+
+
+        }
+
+        @include respond(phone-small) {
+        }
 
     }
     
