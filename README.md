@@ -6,6 +6,13 @@ Below you can see how the layout is developing.
 
 Stay tuned for more!
 
+I decided to change the design. Hope you will enjoy the balloons! :) 
+
+ps. Below you can still see the old version.
+
+![Main_new_design_](https://user-images.githubusercontent.com/43984219/138058274-f616e742-7d6d-47b7-a80b-b8fdd2f3bcda.png)
+
+
 ![MainPage2](https://user-images.githubusercontent.com/43984219/135061133-a6f1ba01-0f97-4ba1-89d4-863257b9fcfc.png)
 
 
