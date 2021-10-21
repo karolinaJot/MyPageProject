@@ -1,5 +1,4 @@
 .section-about {
-    border: 3px solid green;
     
     background-image: linear-gradient( 
         to right,
@@ -26,7 +25,7 @@
     }
     
     &__project-container {
-        background-color: rgba($color-white, .8); 
+        background-color: rgba($color-white, .6); 
         width: 90%;
         margin: 2rem auto;
         padding: 2rem 1.5rem; 
@@ -71,27 +70,29 @@
     } 
 
     &__intro {
-        border: 1px solid red;
         display: flex;
     }
 
     &__text {
-        border: 1px solid green;
         display: flex;
         flex-direction: column; 
-        padding-right: 1rem;
-        background-color: orangered;
+        padding-right: 1rem; 
     }
 
     &__img {
-        border: 1px solid blue;
-        background-color: orchid;
+
     }
 
     &__details {
         padding-top: 2rem;
         display: flex;
         justify-content: space-between;
+        margin: 0 5rem;
+    }
+
+    &__btn-box {
+        width: 30rem;
+        margin: 0 auto;
     }
 
 }
