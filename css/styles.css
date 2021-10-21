@@ -156,10 +156,10 @@ body {
   font-weight: 500;
   text-align: center;
   padding: .5rem;
-  background-color: #fff;
   border-radius: 50px;
   display: block;
-  color: #2F4858; }
+  color: #fff;
+  background-image: linear-gradient(to bottom, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5); }
   .btn--blue:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
@@ -227,18 +227,31 @@ body {
   .composition__img {
     width: 45%;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+    position: relative;
     transition: all .2s;
     outline-offset: 1.2rem; }
     @media (max-width: 56.25em) {
       .composition__img {
         width: 30%; } }
+    .composition__img--p1 {
+      margin: 2rem;
+      z-index: 100; }
+    .composition__img--p2 {
+      margin-left: 25rem;
+      margin-top: -10rem;
+      z-index: 100; }
+    .composition__img--p3 {
+      margin-top: -5rem;
+      margin-left: 15rem;
+      z-index: 100; }
     .composition__img:hover {
-      outline: 1rem solid #7a4b41;
+      outline: 1rem solid #07a0b5;
       transform: scale(1.05) translateY(-0.4rem);
       box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
-      z-index: 20; }
+      z-index: 200; }
   .composition:hover .composition__img:not(:hover) {
-    transform: scale(0.95); }
+    transform: scale(0.95);
+    z-index: 100; }
 
 .feature-box {
   padding: 0 .7rem;
@@ -594,7 +607,6 @@ body {
       flex-direction: column; } }
 
 .section-about {
-  border: 3px solid green;
   background-image: linear-gradient(to right, rgba(248, 236, 226, 0.8), rgba(249, 210, 174, 0.8)), url(../img/ian-dooley-baloons-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -603,7 +615,7 @@ body {
   align-items: center;
   padding: 3rem 0; }
   .section-about__project-container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
     width: 90%;
     margin: 2rem auto;
     padding: 2rem 1.5rem;
@@ -637,21 +649,19 @@ body {
       display: flex;
       flex-direction: column; } }
   .content-about__intro {
-    border: 1px solid red;
     display: flex; }
   .content-about__text {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
-    padding-right: 1rem;
-    background-color: orangered; }
-  .content-about__img {
-    border: 1px solid blue;
-    background-color: orchid; }
+    padding-right: 1rem; }
   .content-about__details {
     padding-top: 2rem;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0 5rem; }
+  .content-about__btn-box {
+    width: 30rem;
+    margin: 0 auto; }
 
 .heading-tertiary {
   font-weight: 700; }
