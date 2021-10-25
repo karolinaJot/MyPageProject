@@ -700,3 +700,65 @@ body {
           height: 3rem; } }
       .button-box a span img {
         height: 100%; }
+
+.section-contact {
+  height: 100vh;
+  background-image: linear-gradient(to left, #f8ece2, #f9d2ae);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .section-contact__container {
+    height: 60vh;
+    width: 80%;
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/img/ian-dooley-baloons-unsplash_contactMe.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4); }
+  .section-contact__content {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; }
+  .section-contact__top-bar {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem; }
+  .section-contact__form {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .section-contact__form h4 {
+      text-align: center;
+      text-transform: uppercase; }
+    .section-contact__form button {
+      padding: .2rem 2rem;
+      border: none;
+      border-radius: 20rem;
+      text-align: center;
+      display: block;
+      margin: 1rem auto 0 auto;
+      text-transform: uppercase; }
+  .section-contact__form-el {
+    display: flex;
+    flex-direction: column; }
+    .section-contact__form-el label {
+      font-size: .7rem;
+      display: block;
+      margin-bottom: .2rem; }
+    .section-contact__form-el input {
+      margin-bottom: .7rem; }
+    .section-contact__form-el input, .section-contact__form-el textarea {
+      border: none;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.4);
+      font-size: .7rem;
+      padding: .3rem 0; }
+      .section-contact__form-el input:focus, .section-contact__form-el textarea:focus {
+        border: none;
+        border-bottom: #193b54; }
+    .section-contact__form-el input:focus, .section-contact__form-el textarea:focus {
+      border-bottom: #193b54; }
