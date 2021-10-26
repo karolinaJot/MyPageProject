@@ -24,7 +24,6 @@
     }
 
     &__content {
-        border: 1px solid black;
         width: 50%; 
         display: flex;
         flex-direction: column;
@@ -41,7 +40,6 @@
     }
 
     &__form {
-        border: 1px solid green;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -52,13 +50,28 @@
         }
 
         button {
-            padding: .2rem 2rem; 
+            padding: .4rem 2rem; 
             border: none;
             border-radius: 20rem; 
             text-align: center;
             display: block;
             margin: 1rem auto 0 auto;  
             text-transform: uppercase;
+            color: $color-white;
+            background-image: linear-gradient(
+                to top, $color-blue-dark1, #1a526e,
+                #156b88, #0c85a0, $color-blue-light);  
+            box-shadow: 0 0 .4rem rgba($color-black, .4);
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+                }
+            
+                &:active {
+                transform: translateY(-1px); 
+                box-shadow: 0 5px 10px rgba($color-black, 0.2);
+                }
         }
 
     }
@@ -75,6 +88,12 @@
 
         input {
             margin-bottom: .7rem; 
+            padding: .4rem 0;
+        }
+
+        textarea {
+            height:5rem;
+            padding: .3rem 0;
         }
 
         input, textarea {
@@ -83,7 +102,6 @@
             border-radius: 3px;
             box-shadow: 0  0 .2rem rgba($color-black, .4); 
             font-size: .7rem;
-            padding: .3rem 0;
 
             &:focus {
                 border: none;
@@ -91,10 +109,10 @@
             }
         }
 
-        input:focus, textarea:focus {
-            // border: none;
-            border-bottom: $color-blue-dark1;
-            // background-color: saddlebrown; 
+        textarea:focus, input:focus {
+            outline: 0;    
+            background-color: $color-orange-light3; 
+            border-bottom: 2px solid $color-blue-dark1; 
 
         }
     }
