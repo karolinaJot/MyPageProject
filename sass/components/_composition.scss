@@ -1,7 +1,6 @@
 .composition {
     
     width: 90%;
-    // position: relative;
     margin: 0 auto;
 
     @include respond(tab-port) {
@@ -18,7 +17,7 @@
          
     
 
-        @include respond(tab-port) {
+        @include respond(tab-port) { 
             width: 30%;
          }
     
