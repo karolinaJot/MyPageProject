@@ -130,6 +130,7 @@
             background-image: linear-gradient(to right top,
             rgba($color-brown-dark, 1), 
             rgba($color-brown-light-1, 1));  
+            box-shadow: 0 0 .4rem rgba($color-black, .4); 
     
             &:hover {
                 transform: translateY(-3px);

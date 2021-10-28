@@ -134,7 +134,8 @@ body {
   border-radius: 10rem;
   opacity: 0;
   animation: show-btn 2s ease-in-out 5s forwards;
-  transform: skew(6deg); }
+  transform: skew(6deg);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4); }
   .btn--blue-prim:hover {
     transform: translateY(-3px) skew(6deg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
@@ -159,43 +160,12 @@ body {
   border-radius: 50px;
   display: block;
   color: #fff;
-  background-image: linear-gradient(to bottom, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5); }
+  background-image: linear-gradient(to bottom, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4); }
   .btn--blue:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
   .btn--blue:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-
-.btn--brown-2 {
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-  padding: .5rem;
-  background-color: #fff;
-  border-radius: 10rem;
-  display: block;
-  color: #7a4b41; }
-  .btn--brown-2:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-  .btn--brown-2:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-
-.btn--green {
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-  padding: .5rem;
-  background-color: #fff;
-  border-radius: 50px;
-  display: block;
-  color: #006D60; }
-  .btn--green:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-  .btn--green:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
@@ -681,7 +651,8 @@ body {
     align-items: center;
     padding: .4rem .8rem;
     border-radius: 10rem;
-    background-image: linear-gradient(to right top, #7a4b41, #d0b190); }
+    background-image: linear-gradient(to right top, #7a4b41, #d0b190);
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4); }
     .button-box a:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
@@ -757,7 +728,8 @@ body {
       margin-bottom: .2rem; }
     .section-contact__form-el input {
       margin-bottom: .7rem;
-      padding: .4rem 0; }
+      padding: .4rem 0;
+      font-family: monospace; }
     .section-contact__form-el textarea {
       height: 5rem;
       padding: .3rem 0; }
