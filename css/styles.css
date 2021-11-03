@@ -127,7 +127,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   color: #fff;
-  background-image: linear-gradient(to bottom, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5);
+  background-image: linear-gradient(to top, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5);
   font-size: 1.2em;
   margin-top: 5rem;
   padding: .5em 2em;
@@ -160,7 +160,7 @@ body {
   border-radius: 50px;
   display: block;
   color: #fff;
-  background-image: linear-gradient(to bottom, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5);
+  background-image: linear-gradient(to top, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5);
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4); }
   .btn--blue:hover {
     transform: translateY(-3px);
@@ -651,7 +651,7 @@ body {
     align-items: center;
     padding: .4rem .8rem;
     border-radius: 10rem;
-    background-image: linear-gradient(to right top, #7a4b41, #d0b190);
+    background-image: linear-gradient(to top, #7a4b41, #d0b190);
     box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4); }
     .button-box a:hover {
       transform: translateY(-3px);

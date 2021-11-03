@@ -14,7 +14,7 @@
        margin-left: auto;
        color: $color-white;
        background-image: linear-gradient(
-           to bottom, $color-blue-dark1, #1a526e,
+           to top, $color-blue-dark1, #1a526e,
             #156b88, #0c85a0, $color-blue-light);   
        font-size: 1.2em;
        margin-top: 5rem; 
@@ -58,7 +58,7 @@
         display: block;
         color: $color-white; 
         background-image: linear-gradient(
-           to bottom, $color-blue-dark1, #1a526e,
+           to top, $color-blue-dark1, #1a526e,
             #156b88, #0c85a0, $color-blue-light);  
         box-shadow: 0 0 .4rem rgba($color-black, .4); 
             
