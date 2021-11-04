@@ -37,6 +37,29 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 3rem;
+
+        &--left {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__icon-box {
+        display: block;
+        border: 1px solid  green;
+        width: 2.5rem;
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: fill;
+            object-position: center;
+        }
     }
 
     &__form {

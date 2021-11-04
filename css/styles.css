@@ -763,6 +763,23 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem; }
+    .section-contact__top-bar--left {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+  .section-contact__icon-box {
+    display: block;
+    border: 1px solid  green;
+    width: 2.5rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-contact__icon-box img {
+      width: 100%;
+      display: block;
+      object-fit: fill;
+      object-position: center; }
   .section-contact__form {
     display: flex;
     flex-direction: column;
