@@ -13,6 +13,11 @@ ps. Below you can still see the old version.
 ![Main_new_design_](https://user-images.githubusercontent.com/43984219/138058274-f616e742-7d6d-47b7-a80b-b8fdd2f3bcda.png)
 
 
+
+![abouteMe_new](https://user-images.githubusercontent.com/43984219/140325715-9cf154c8-071b-47cc-a966-a89e4c60ee41.png)
+
+
+
 ![project_card_2](https://user-images.githubusercontent.com/43984219/138348964-ce27117e-534f-4b59-9ab8-0c3c3bfe9d61.png)
 
 Here starts my first idea for this website's design
