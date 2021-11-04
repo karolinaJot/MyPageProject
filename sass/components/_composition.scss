@@ -42,7 +42,7 @@
 
         &:hover {
             outline: 1rem solid $color-blue-light; 
-            transform: scale(1.05) translateY(-0.4rem); 
+            transform: scale(1.05) translateY(-.4rem); 
             box-shadow: 0 2rem 3rem rgba($color-black, .6);
             z-index: 200;
 
