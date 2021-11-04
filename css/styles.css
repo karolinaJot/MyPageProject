@@ -790,10 +790,15 @@ body {
     align-items: center;
     justify-content: center; }
     .section-contact__icon-box img {
+      border-radius: 3px;
       width: 100%;
       display: block;
       object-fit: fill;
-      object-position: center; }
+      object-position: center;
+      transition: all .2s; }
+      .section-contact__icon-box img:hover {
+        box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4);
+        transform: scale(1.2); }
     .section-contact__icon-box--small {
       width: 2rem; }
   .section-contact__form {
