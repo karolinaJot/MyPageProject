@@ -47,7 +47,6 @@
 
     &__icon-box {
         display: block;
-        border: 1px solid  green;
         width: 2.5rem;
         margin-right: 2rem;
         display: flex;
@@ -59,6 +58,10 @@
             display: block;
             object-fit: fill;
             object-position: center;
+        }
+
+        &--small {
+            width: 2rem;
         }
     }
 

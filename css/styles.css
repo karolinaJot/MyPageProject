@@ -769,7 +769,6 @@ body {
       justify-content: space-between; }
   .section-contact__icon-box {
     display: block;
-    border: 1px solid  green;
     width: 2.5rem;
     margin-right: 2rem;
     display: flex;
@@ -780,6 +779,8 @@ body {
       display: block;
       object-fit: fill;
       object-position: center; }
+    .section-contact__icon-box--small {
+      width: 2rem; }
   .section-contact__form {
     display: flex;
     flex-direction: column;
