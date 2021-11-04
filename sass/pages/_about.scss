@@ -78,15 +78,19 @@
         padding-right: 1rem; 
     }
 
-    &__img {
-
-    }
-
     &__details {
         padding-top: 2rem;
         display: flex;
         justify-content: space-between;
         margin: 0 5rem;
+
+        &--left {
+            
+        }
+        
+        &--right {
+            margin-left: 5rem;
+        }
     }
 
     &__btn-box {

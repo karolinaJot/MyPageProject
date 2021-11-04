@@ -98,3 +98,28 @@
             transform: translateY(0);
        }
    }
+
+   .btn-text--2 {
+       font-weight: 700;
+       border-radius: 3px; 
+       &:link,
+       &:visited {
+           color: $color-blue-dark1;
+           display: inline-block;
+           border-bottom: 1.5px solid $color-blue-dark1;
+           padding: 3px 5px 0 5px;    
+        }
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-blue-dark1;
+            box-shadow: 0 .8rem 1.2rem rgba($color-black, 0.2);
+            transform: translateY(-2px);
+       }
+
+       &:active {
+            box-shadow: 0 .4rem .8rem rgba($color-black, 0.2);
+            transform: translateY(0);
+       }
+
+    }   
