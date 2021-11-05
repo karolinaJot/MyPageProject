@@ -8,6 +8,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(tab-land) {
+        height: auto;
+    }
+
+    @include respond(phone) {
+        background-image: url(/img/ian-dooley-baloons-unsplash_contactMe.jpg);
+    }
      
 
     &__container {
@@ -21,6 +29,23 @@
         background-size: cover;
         border-radius: 3px;
         box-shadow: 0 .8rem 1.2rem rgba($color-black, .4);
+
+        @include respond(tab-land) {
+            height: 40vh;
+            background-image: url(/img/ian-dooley-baloons-unsplash_contactMe.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: skew(-6deg); 
+            margin: 8rem 0;
+        }
+
+        @include respond(phone) {
+            transform: skew(0);
+            width: 100%;
+            background-image: none; 
+            box-shadow: none; 
+        }
     }
 
     &__content {
@@ -28,6 +53,19 @@
         display: flex;
         flex-direction: column;
         padding: 1rem;
+
+        @include respond(tab-land) {
+            background-color: rgba($color-white, .9);
+            width: 90%;
+            margin: 0 auto;
+            transform: skew(6deg); 
+        }
+
+        @include respond(phone) {
+            transform: skew(0);
+            box-shadow: 0 .8rem 1.2rem rgba($color-black, .4);
+            border-radius: 3px;
+        }
 
         
     }
@@ -77,12 +115,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
         img {
+            border-radius: 3px;
             width: 100%;
             display: block;
             object-fit: fill;
             object-position: center;
+            transition: all .2s;
+
+            &:hover {
+                box-shadow: 0 .8rem 1.2rem rgba($color-black, .4); 
+                transform: scale(1.2);
+            }
         }
 
         &--small {

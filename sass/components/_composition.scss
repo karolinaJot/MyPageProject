@@ -3,41 +3,63 @@
     width: 90%;
     margin: 0 auto;
 
-    @include respond(tab-port) {
-        width: 60%;   
+    @include respond(tab-port) {   
         margin: 1rem auto; 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        
     }
     
     &__img { 
         width: 45%; 
         box-shadow: 0 1rem 3rem rgba($color-black, .5);
-        position: relative; 
+        // position: relative; 
         transition: all .2s;
         outline-offset: 1.2rem;  
-         
-    
-
+        
+        
+        
         @include respond(tab-port) { 
-            width: 30%;
+            width: 40%; 
+            display: block; 
          }
     
 
         &--p1{
             margin: 2rem;
-            z-index: 100;
-           
-         }
 
+            @include respond(tab-port){
+                margin: 0;
+                height: 13rem;
+            }
+
+          
+            
+        }
+        
         &--p2{
-           margin-left: 25rem;
-           margin-top: -10rem;  
-           z-index: 100;
+            margin-left: 25rem;
+            margin-top: -10rem;  
+
+            @include respond(tab-port){
+                margin-left: -6rem;  
+                margin-top: 3rem; 
+                transform: scale(1.2);
+                z-index: 50;
+            }
         }
 
         &--p3{
             margin-top: -5rem; 
             margin-left: 15rem;
-            z-index: 100; 
+
+            @include respond(tab-port){
+               margin-top: 0;  
+               margin-left: -7rem; 
+               height: 13rem; 
+
+            }
         } 
 
         &:hover {
