@@ -14,7 +14,7 @@
     }
 
     @include respond(phone) {
-        background-image: url(/img/ian-dooley-baloons-unsplash_contactMe.jpg);
+        background-image: url(/img/ian-dooley-baloons-unsplash_contactMe_small.jpg); 
     }
      
 
@@ -32,7 +32,7 @@
 
         @include respond(tab-land) {
             height: 40vh;
-            background-image: url(/img/ian-dooley-baloons-unsplash_contactMe.jpg);
+            background-image: url(/img/ian-dooley-baloons-unsplash_contactMe_small.jpg);
             display: flex;
             justify-content: center;
             align-items: center;

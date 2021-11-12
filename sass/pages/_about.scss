@@ -4,7 +4,7 @@
         to right,
         rgba($color-orange-light2, .8),
         rgba($color-orange-light1, .8)),  
-    url(../img/ian-dooley-baloons-unsplash.jpg);  
+    url(../img/ian-dooley-baloons-unsplash_1082.jpg);  
     background-position: center; 
     background-size: cover;    
     display: flex;
@@ -13,16 +13,14 @@
     padding: 3rem 0;
 
     
-    @include respond(tab-port) { 
-    } 
-
-    @include respond(phone-small) {
-        
-    }
-
-    @include respond(desktop) {
-        
-    }
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 75em) {
+        background-image: linear-gradient( 
+        to right,
+        rgba($color-orange-light2, .8), 
+        rgba($color-orange-light1, .8)),  
+    url(../img/ian-dooley-baloons-unsplash_2000.jpg); 
+}
     
     &__project-container {
         background-color: rgba($color-white, .6); 
