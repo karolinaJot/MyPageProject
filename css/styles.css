@@ -135,7 +135,9 @@ body {
   opacity: 0;
   animation: show-btn 2s ease-in-out 5s forwards;
   transform: skew(6deg);
-  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 3px; }
   .btn--blue-prim:hover {
     transform: translateY(-3px) skew(6deg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
@@ -148,7 +150,7 @@ body {
   @media (max-width: 37.3em) {
     .btn--blue-prim {
       padding: .8rem 3rem;
-      font-size: 2rem;
+      font-size: 1.8rem;
       width: 30rem;
       transform: skew(0); } }
 
@@ -359,7 +361,8 @@ body {
     animation: show-sub 2s ease 4s forwards; }
     @media (max-width: 37.3em) {
       .heading-primary--sub {
-        text-align: center; } }
+        text-align: center;
+        font-size: 2rem; } }
   .heading-primary--sub-extra {
     color: #8d2c2c;
     font-weight: 500; }

@@ -24,6 +24,8 @@
        animation: show-btn 2s ease-in-out 5s forwards;
        transform: skew(6deg);
        box-shadow: 0 0 .4rem rgba($color-black, .4);  
+       text-transform: uppercase; 
+       letter-spacing: 3px;
 
        &:hover {
         transform: translateY(-3px) skew(6deg);
@@ -41,7 +43,7 @@
 
        @include respond(phone) {
            padding: .8rem 3rem;
-           font-size: 2rem;
+           font-size: 1.8rem;
            width: 30rem;
            transform: skew(0); 
        }
