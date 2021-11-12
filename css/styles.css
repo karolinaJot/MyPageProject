@@ -299,7 +299,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: url(../img/ian-dooley-baloons-unsplash.jpg);
+  background-image: url(../img/ian-dooley-baloons-unsplash_1082.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -307,7 +307,7 @@ body {
   align-items: center; }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
     .header {
-      background-image: url(../img/ian-dooley-baloons-unsplash.jpg); } }
+      background-image: url(../img/ian-dooley-baloons-unsplash_2000_short.jpg); } }
   .header__text-box {
     display: flex;
     flex-direction: column;
@@ -578,35 +578,6 @@ body {
       box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4);
       transition: all .3s; }
 
-.section-details {
-  height: auto;
-  background-image: linear-gradient(to right, rgba(208, 177, 144, 0.8), rgba(122, 75, 65, 0.8)), url(../img/jplenio_Pixabay_fogg_1280x720.jpg);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  padding: 8rem 0; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
-    .section-details {
-      background-image: linear-gradient(to right, rgba(208, 177, 144, 0.8), rgba(122, 75, 65, 0.8)), url(../img/jplenio_Pixabay_fogg.jpg); } }
-  .section-details__content-container {
-    margin: auto 2rem; }
-  .section-details__text {
-    padding-bottom: 2rem; }
-  @media (max-width: 56.25em) {
-    .section-details {
-      height: auto; } }
-
-.features-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  @media (max-width: 56.25em) {
-    .features-container {
-      display: felx;
-      flex-direction: column; } }
-
 .section-about-me {
   background-image: linear-gradient(to left, #f8ece2, #f9d2ae);
   padding: 2rem;
@@ -670,13 +641,16 @@ body {
         transform: scale(1.2); }
 
 .section-about {
-  background-image: linear-gradient(to right, rgba(248, 236, 226, 0.8), rgba(249, 210, 174, 0.8)), url(../img/ian-dooley-baloons-unsplash.jpg);
+  background-image: linear-gradient(to right, rgba(248, 236, 226, 0.8), rgba(249, 210, 174, 0.8)), url(../img/ian-dooley-baloons-unsplash_1082.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem 0; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+    .section-about {
+      background-image: linear-gradient(to right, rgba(248, 236, 226, 0.8), rgba(249, 210, 174, 0.8)), url(../img/ian-dooley-baloons-unsplash_2000.jpg); } }
   .section-about__project-container {
     background-color: rgba(255, 255, 255, 0.6);
     width: 90%;
@@ -789,7 +763,7 @@ body {
       height: auto; } }
   @media (max-width: 37.3em) {
     .section-contact {
-      background-image: url(/img/ian-dooley-baloons-unsplash_contactMe.jpg); } }
+      background-image: url(/img/ian-dooley-baloons-unsplash_contactMe_small.jpg); } }
   .section-contact__container {
     height: 60vh;
     width: 80%;
@@ -800,7 +774,7 @@ body {
     @media (max-width: 75em) {
       .section-contact__container {
         height: 40vh;
-        background-image: url(/img/ian-dooley-baloons-unsplash_contactMe.jpg);
+        background-image: url(/img/ian-dooley-baloons-unsplash_contactMe_small.jpg);
         display: flex;
         justify-content: center;
         align-items: center;
