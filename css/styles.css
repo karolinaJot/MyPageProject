@@ -77,7 +77,7 @@ html {
       font-size: 6px; } }
 
 body {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #545454;
@@ -146,24 +146,41 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   @media (max-width: 56.25em) {
     .btn--blue-prim {
-      transform: skew(4deg); } }
+      transform: skew(4deg); }
+      .btn--blue-prim:hover {
+        transform: translateY(-3px) skew(4deg); }
+      .btn--blue-prim:active {
+        transform: translateY(-1px) skew(4deg); } }
   @media (max-width: 37.3em) {
     .btn--blue-prim {
       padding: .8rem 3rem;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       width: 30rem;
-      transform: skew(0); } }
+      transform: skew(0); }
+      .btn--blue-prim:hover {
+        transform: skew(0); }
+      .btn--blue-prim:active {
+        transform: skew(0); } }
+  @media (max-width: 26.25em) {
+    .btn--blue-prim {
+      font-size: 1.8rem;
+      width: 40rem; } }
 
 .btn--blue {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   padding: .5rem;
   border-radius: 50px;
   display: block;
   color: #fff;
   background-image: linear-gradient(to top, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5);
-  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  @media (max-width: 37.3em) {
+    .btn--blue {
+      font-size: 1.6rem; } }
   .btn--blue:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
@@ -342,18 +359,21 @@ body {
     overflow: hidden;
     border-right: 0.25rem solid #545454;
     white-space: nowrap;
-    margin: 0 auto;
+    margin: 0 auto .5rem 0;
     letter-spacing: 0.3rem;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite; }
     @media (max-width: 37.3em) {
       .heading-primary--main {
         font-size: 2.5rem; } }
+    @media (max-width: 26.25em) {
+      .heading-primary--main {
+        font-size: 3.2rem; } }
   .heading-primary--sub {
     display: block;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.6rem;
     letter-spacing: 0.023em;
     opacity: 0;
@@ -363,9 +383,12 @@ body {
       .heading-primary--sub {
         text-align: center;
         font-size: 2rem; } }
+    @media (max-width: 26.25em) {
+      .heading-primary--sub {
+        font-size: 2.6rem; } }
   .heading-primary--sub-extra {
     color: #8d2c2c;
-    font-weight: 500; }
+    font-weight: 700; }
 
 .row {
   max-width: 71.25rem;
@@ -532,7 +555,7 @@ body {
     height: 10rem;
     overflow: hidden;
     margin-bottom: 2rem;
-    border-radius: 50%;
+    border-radius: 3px;
     box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4); }
   .footer__img {
     display: block;
@@ -551,7 +574,7 @@ body {
         display: block;
         text-align: center;
         padding: 1rem 0;
-        font-size: 1.5rem; } }
+        font-size: 1.8rem; } }
     .footer__item:not(:last-child) {
       margin-right: .5rem; }
   .footer__link {
@@ -565,7 +588,7 @@ body {
       transition: all .3s; }
   @media (max-width: 37.3em) {
     .footer__description {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -596,7 +619,8 @@ body {
     height: 100%;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4);
+    aspect-ratio: 80/133; }
     @media (max-width: 37.3em) {
       .section-about-me__img-container {
         flex: 0; } }
@@ -618,7 +642,10 @@ body {
       margin-top: 1rem; }
       @media (max-width: 37.3em) {
         .section-about-me__text-container p {
-          font-size: 1.5rem; } }
+          font-size: 1.8rem; } }
+      @media (max-width: 26.25em) {
+        .section-about-me__text-container p {
+          font-size: 2rem; } }
   .section-about-me__photos-box {
     width: 100%;
     display: flex;
@@ -679,6 +706,12 @@ body {
   background-clip: text;
   cursor: default;
   text-align: center; }
+  @media (max-width: 37.3em) {
+    .heading-secondary {
+      font-size: 2.4rem; } }
+  @media (max-width: 26.25em) {
+    .heading-secondary {
+      font-size: 2.8rem; } }
 
 .content-about {
   width: 100%;
@@ -701,6 +734,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 5rem; }
+    @media (max-width: 37.3em) {
+      .content-about__details {
+        font-size: 1.6rem; } }
     @media (max-width: 56.25em) {
       .content-about__details--left {
         width: 30%; } }
@@ -718,9 +754,15 @@ body {
 
 .heading-tertiary {
   font-weight: 700; }
+  @media (max-width: 37.3em) {
+    .heading-tertiary {
+      font-size: 2rem; } }
 
 .paragraph {
   font-weight: 400; }
+  @media (max-width: 37.3em) {
+    .paragraph {
+      font-size: 1.8rem; } }
 
 .button-box {
   margin: 3rem auto;
@@ -809,6 +851,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem; }
+    @media (max-width: 37.3em) {
+      .section-contact__top-bar {
+        font-size: 1.8rem; } }
     .section-contact__top-bar--left {
       display: flex;
       flex-direction: row;
@@ -854,7 +899,11 @@ body {
     width: 100%; }
     .section-contact__form h4 {
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      letter-spacing: .5px; }
+      @media (max-width: 37.3em) {
+        .section-contact__form h4 {
+          font-size: 1.8rem; } }
     .section-contact__form button {
       padding: .4rem 2rem;
       border: none;
@@ -866,7 +915,9 @@ body {
       color: #fff;
       background-image: linear-gradient(to top, #193b54, #1a526e, #156b88, #0c85a0, #07a0b5);
       box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
-      transition: all .2s; }
+      transition: all .2s;
+      letter-spacing: 2px;
+      font-weight: 100; }
       .section-contact__form button:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
@@ -880,6 +931,9 @@ body {
       font-size: .7rem;
       display: block;
       margin-bottom: .2rem; }
+      @media (max-width: 37.3em) {
+        .section-contact__form-el label {
+          font-size: 1.2rem; } }
     .section-contact__form-el input {
       margin-bottom: .7rem;
       padding: .4rem 0;
@@ -893,6 +947,9 @@ body {
       border-radius: 3px;
       box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.4);
       font-size: .7rem; }
+      @media (max-width: 37.3em) {
+        .section-contact__form-el input, .section-contact__form-el textarea {
+          font-size: 1.2rem; } }
       .section-contact__form-el input:focus, .section-contact__form-el textarea:focus {
         border: none;
         border-bottom: #193b54; }

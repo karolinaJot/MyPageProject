@@ -75,6 +75,10 @@
         justify-content: space-between;
         margin-bottom: 3rem;
 
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+
         &--left {
             display: flex;
             flex-direction: row;
@@ -143,6 +147,11 @@
         h4 {
             text-align: center;
             text-transform: uppercase;
+            letter-spacing: .5px; 
+
+            @include respond(phone) {
+                font-size: 1.8rem;
+            }
         }
 
         button {
@@ -159,6 +168,8 @@
                 #156b88, #0c85a0, $color-blue-light);  
             box-shadow: 0 0 .4rem rgba($color-black, .4);
             transition: all .2s;
+            letter-spacing: 2px;
+            font-weight: 100;
 
                 &:hover {
                     transform: translateY(-3px);
@@ -181,12 +192,18 @@
             font-size: .7rem; 
             display: block;
             margin-bottom: .2rem; 
+            
+            @include respond(phone) {
+                font-size: 1.2rem; 
+            }
         }
 
         input {
             margin-bottom: .7rem; 
             padding: .4rem 0;
             font-family: monospace;
+
+           
         } 
 
         textarea {
@@ -200,6 +217,10 @@
             border-radius: 3px;
             box-shadow: 0  0 .2rem rgba($color-black, .4); 
             font-size: .7rem;
+
+            @include respond(phone) {
+                font-size: 1.2rem; 
+            }
 
             &:focus {
                 border: none;
