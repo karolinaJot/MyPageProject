@@ -13,7 +13,7 @@
           height: 10rem;
           overflow: hidden;
           margin-bottom: 2rem;
-          border-radius: 50%;
+          border-radius: 3px;
           box-shadow: 0 .8rem 1.2rem rgba($color-black, .4);
         }
         
@@ -42,7 +42,7 @@
               display: block; 
               text-align: center;
               padding: 1rem 0;
-              font-size: 1.5rem;
+              font-size: 1.8rem; 
               
             } 
             
@@ -70,7 +70,7 @@
 
       &__description {
           @include respond(phone){
-              font-size: 1.5rem;
+              font-size: 1.8rem;
               display: flex;
               flex-direction: column;
               align-items: center;

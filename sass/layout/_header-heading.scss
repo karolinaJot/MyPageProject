@@ -1,5 +1,4 @@
 .heading-primary {
-    border: 1px solid black;  
     display: block;
     transform: skew(6deg);
     &:hover {
@@ -14,7 +13,6 @@
     }
     
     &--main {
-        border: 1px solid green;
         overflow: hidden;
         border-right: 0.25rem solid $color-grey-dark;
         white-space: nowrap;
@@ -31,6 +29,10 @@
         @include respond(phone) {
             font-size: 2.5rem;
         } 
+
+        @include respond(phone-small) {
+            font-size: 3.2rem;
+        } 
     }
     
     &--sub {
@@ -46,6 +48,10 @@
             text-align: center;
             font-size: 2rem;
         }
+
+        @include respond(phone-small) {
+            font-size: 2.6rem;
+        } 
     }
     
     &--sub-extra {

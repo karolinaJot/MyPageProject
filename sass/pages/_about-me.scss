@@ -53,7 +53,11 @@
             margin-top: 1rem;
 
             @include respond(phone) {
-                font-size: 1.5rem;     
+                font-size: 1.8rem;      
+            }
+
+            @include respond(phone-small) {
+                font-size: 2rem;      
             }
         }
     }
