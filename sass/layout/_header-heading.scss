@@ -16,10 +16,9 @@
     &--main {
         border: 1px solid green;
         overflow: hidden;
-        width: 70%;
         border-right: 0.25rem solid $color-grey-dark;
         white-space: nowrap;
-        margin: 0 auto;
+        margin: 0 auto .5rem 0;
         letter-spacing: 0.3rem;
         font-size: 3rem;
         font-weight: 500; 

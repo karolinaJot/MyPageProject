@@ -154,7 +154,7 @@ body {
   @media (max-width: 37.3em) {
     .btn--blue-prim {
       padding: .8rem 3rem;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       width: 30rem;
       transform: skew(0); }
       .btn--blue-prim:hover {
@@ -350,10 +350,9 @@ body {
   .heading-primary--main {
     border: 1px solid green;
     overflow: hidden;
-    width: 70%;
     border-right: 0.25rem solid #545454;
     white-space: nowrap;
-    margin: 0 auto;
+    margin: 0 auto .5rem 0;
     letter-spacing: 0.3rem;
     font-size: 3rem;
     font-weight: 500;
