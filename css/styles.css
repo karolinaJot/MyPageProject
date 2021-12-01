@@ -146,13 +146,21 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   @media (max-width: 56.25em) {
     .btn--blue-prim {
-      transform: skew(4deg); } }
+      transform: skew(4deg); }
+      .btn--blue-prim:hover {
+        transform: translateY(-3px) skew(4deg); }
+      .btn--blue-prim:active {
+        transform: translateY(-1px) skew(4deg); } }
   @media (max-width: 37.3em) {
     .btn--blue-prim {
       padding: .8rem 3rem;
       font-size: 1.8rem;
       width: 30rem;
-      transform: skew(0); } }
+      transform: skew(0); }
+      .btn--blue-prim:hover {
+        transform: skew(0); }
+      .btn--blue-prim:active {
+        transform: skew(0); } }
 
 .btn--blue {
   font-size: 1rem;

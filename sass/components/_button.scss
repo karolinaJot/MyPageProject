@@ -39,6 +39,14 @@
 
         @include respond(tab-port) {
          transform: skew(4deg);  
+
+         &:hover {
+             transform: translateY(-3px) skew(4deg);
+         }
+
+         &:active {
+            transform: translateY(-1px) skew(4deg);
+         }
         }
 
        @include respond(phone) {
@@ -46,6 +54,14 @@
            font-size: 1.8rem;
            width: 30rem;
            transform: skew(0); 
+
+           &:hover{
+               transform: skew(0);
+           }
+
+           &:active {
+               transform: skew(0); 
+           }
        }
 
     
