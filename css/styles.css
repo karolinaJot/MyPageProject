@@ -619,7 +619,8 @@ body {
     height: 100%;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.4);
+    aspect-ratio: 80/133; }
     @media (max-width: 37.3em) {
       .section-about-me__img-container {
         flex: 0; } }
