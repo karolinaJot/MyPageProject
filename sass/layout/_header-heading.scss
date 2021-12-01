@@ -1,4 +1,5 @@
 .heading-primary {
+    border: 1px solid black;  
     display: block;
     transform: skew(6deg);
     &:hover {
@@ -13,13 +14,15 @@
     }
     
     &--main {
+        border: 1px solid green;
         overflow: hidden;
+        width: 70%;
         border-right: 0.25rem solid $color-grey-dark;
         white-space: nowrap;
         margin: 0 auto;
         letter-spacing: 0.3rem;
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 500; 
         text-align: center;
     
         animation: 
@@ -33,7 +36,7 @@
     
     &--sub {
         display: block;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.6rem;
         letter-spacing: 0.023em;
         opacity: 0;
@@ -48,7 +51,7 @@
     
     &--sub-extra {
         color: $color-red-prim;
-        font-weight: 500;
+        font-weight: 700; 
     }
     
 }
