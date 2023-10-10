@@ -1,200 +1,191 @@
 .section-about {
-    
-    background-image: linear-gradient( 
+  background-image: linear-gradient(
+      to right,
+      rgba($color-orange-light2, 0.8),
+      rgba($color-orange-light1, 0.8)
+    ),
+    url(../img/ian-dooley-baloons-unsplash_1082.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+    background-image: linear-gradient(
         to right,
-        rgba($color-orange-light2, .8),
-        rgba($color-orange-light1, .8)),  
-    url(../img/ian-dooley-baloons-unsplash_1082.jpg);  
-    background-position: center; 
-    background-size: cover;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
+        rgba($color-orange-light2, 0.8),
+        rgba($color-orange-light1, 0.8)
+      ),
+      url(../img/ian-dooley-baloons-unsplash_2000.jpg);
+  }
 
-    
-    @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    (min-width: 75em) {
-        background-image: linear-gradient( 
-        to right,
-        rgba($color-orange-light2, .8), 
-        rgba($color-orange-light1, .8)),  
-    url(../img/ian-dooley-baloons-unsplash_2000.jpg); 
-    }
+  &__project-container {
+    background-color: rgba($color-white, 0.6);
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 0.8rem 1.2rem rgba($color-black, 0.4);
+    color: $color-blue-dark1;
+  }
 
-
-    
-    &__project-container {
-        background-color: rgba($color-white, .6); 
-        width: 90%;
-        margin: 2rem auto;
-        padding: 2rem 1.5rem; 
-        border-radius: 3px;
-        box-shadow: 0 .8rem 1.2rem rgba($color-black, .4);
-        color: $color-blue-dark1;
-    }
-
-    &__project-title {
-        display: block;
-        text-align: center;
-        padding-bottom: 2rem;
-        font-size: 2rem;
-
-    }
-} 
-
+  &__project-title {
+    display: block;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+}
 
 .heading-secondary {
-    font-size: 2rem;
-    font-weight: 700;
-    display: inline-block;
-    color: transparent;
-    background-image: linear-gradient(to left,  $color-blue-dark1, #1a526e,
-    #156b88, #0c85a0, $color-blue-light); 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;  
-    background-clip: text;
-    cursor: default;
-    text-align: center; 
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #873985,
+    #712b6e,
+    #5c1d58,
+    #471044,
+    #330430
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  cursor: default;
+  text-align: center;
 
-    @include respond(phone){
-        font-size: 2.4rem; 
-    }
+  @include respond(phone) {
+    font-size: 2.4rem;
+  }
 
-    @include respond(phone-small){
-        font-size: 2.8rem; 
-    }
-
-
-} 
+  @include respond(phone-small) {
+    font-size: 2.8rem;
+  }
+}
 
 .content-about {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__intro {
+    display: flex;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__text {
     display: flex;
     flex-direction: column;
+    padding-right: 1rem;
+  }
 
+  &__details {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
 
-
-    &__intro {
-        display: flex;
-
-        @include respond(tab-port) {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-        }
+    @include respond(phone) {
+      font-size: 1.6rem;
     }
 
-    &__text {
-        display: flex;
-        flex-direction: column; 
-        padding-right: 1rem; 
+    &--left {
+      @include respond(tab-port) {
+        width: 30%;
+      }
+
+      @include respond(phone) {
+        width: 40%;
+      }
     }
 
-    &__details {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 5rem;
+    &--right {
+      margin-left: 5rem;
 
-        @include respond(phone) {
-            font-size: 1.6rem;
-        }
-
-        &--left {
-            
-            @include respond(tab-port) {
-                width: 30%;
-            }
-
-            @include respond(phone) {
-                width: 40%;
-            }
-        }
-        
-        &--right {
-            margin-left: 5rem;
-
-            @include respond(phone) {
-               margin-left: 3rem;
-            }
-        }
+      @include respond(phone) {
+        margin-left: 3rem;
+      }
     }
+  }
 
-    &__btn-box {
-        width: 30rem;
-        margin: 0 auto;
-    }
-
+  &__btn-box {
+    width: 30rem;
+    margin: 0 auto;
+  }
 }
 
 .heading-tertiary {
-    font-weight: 700;
+  font-weight: 700;
 
-    @include respond(phone) {
-        font-size: 2rem;       
-    }
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 .paragraph {
-    font-weight: 400;
+  font-weight: 400;
 
-    @include respond(phone) {
-        font-size: 1.8rem;       
-    }
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
 }
 
+.button-box {
+  margin: 3rem auto;
+  font-size: 1.2rem;
+  font-weight: 400;
 
+  a {
+    color: $color-white;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10rem;
+    background-image: linear-gradient(
+      to top,
+      rgba($color-brown-dark, 1),
+      rgba($color-brown-light-1, 1)
+    );
+    box-shadow: 0 0 0.4rem rgba($color-black, 0.4);
 
-.button-box{
-        margin: 3rem auto; 
-        font-size: 1.2rem;
-        font-weight: 400;
-    
-        
-        
-        
-        a {
-            color: $color-white;
-            display: block;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: .4rem .8rem; 
-            border-radius: 10rem;
-            background-image: linear-gradient(to top,
-            rgba($color-brown-dark, 1), 
-            rgba($color-brown-light-1, 1));  
-            box-shadow: 0 0 .4rem rgba($color-black, .4); 
-    
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 10px 20px rgba($color-black, 0.2);
-                }
-            
-            &:active {
-                transform: translateY(-1px);
-                box-shadow: 0 5px 10px rgba($color-black, 0.2);
-                }
-            
-            @include respond(phone) {
-                padding: .8rem 3rem;
-               font-size: 2rem;
-            }
-    
-            span {
-                padding-left: .4rem; 
-                height: 1.5rem; 
-    
-                @include respond(phone) {
-                    height: 3rem; 
-                }
-    
-                img {
-                    height: 100%;
-    
-                }
-            }
-         }
-        }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba($color-black, 0.2);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba($color-black, 0.2);
+    }
+
+    @include respond(phone) {
+      padding: 0.8rem 3rem;
+      font-size: 2rem;
+    }
+
+    span {
+      padding-left: 0.4rem;
+      height: 1.5rem;
+
+      @include respond(phone) {
+        height: 3rem;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

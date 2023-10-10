@@ -1,62 +1,68 @@
 .heading-primary {
-    display: block;
-    transform: skew(6deg);
-    &:hover {
-        cursor: default;
-    }
+  display: block;
+  transform: skew(6deg);
+  &:hover {
+    cursor: default;
+  }
 
-    @include respond(tab-port) {
-        transform: skew(4deg);  
-    }
+  @include respond(tab-port) {
+    transform: skew(4deg);
+  }
+  @include respond(phone) {
+    transform: skew(0);
+  }
+
+  &--main {
+    overflow: hidden;
+    border-right: 0.25rem solid $color-grey-dark;
+    white-space: nowrap;
+    margin: 0 auto 0.5rem 0;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+
     @include respond(phone) {
-        transform: skew(0);   
+      font-size: 2.5rem;
     }
-    
-    &--main {
-        overflow: hidden;
-        border-right: 0.25rem solid $color-grey-dark;
-        white-space: nowrap;
-        margin: 0 auto .5rem 0;
-        letter-spacing: 0.3rem;
-        font-size: 3rem;
-        font-weight: 500; 
-        text-align: center;
-    
-        animation: 
-        typing 3.5s steps(40, end), 
-        blink 0.75s step-end infinite;
 
-        @include respond(phone) {
-            font-size: 2.5rem;
-        } 
-
-        @include respond(phone-small) {
-            font-size: 3.2rem;
-        } 
+    @include respond(phone-small) {
+      font-size: 3.2rem;
     }
-    
-    &--sub {
-        display: block;
-        font-weight: 500;
-        font-size: 1.6rem;
-        letter-spacing: 0.023em;
-        opacity: 0;
-        transform: translateY(3rem);
-        animation: show-sub 2s ease 4s forwards;
+  }
 
-        @include respond(phone) {
-            text-align: center;
-            font-size: 2rem;
-        }
+  &--sub {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 2.8rem;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: show-sub 2s ease 4s forwards;
 
-        @include respond(phone-small) {
-            font-size: 2.6rem;
-        } 
+    @include respond(phone) {
+      text-align: center;
+      font-size: 2rem;
     }
-    
-    &--sub-extra {
-        color: $color-red-prim;
-        font-weight: 700; 
+
+    @include respond(phone-small) {
+      font-size: 2.6rem;
     }
-    
+  }
+
+  &--sub-extra {
+    color: $color-purple-prim;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.header {
+  &__btn-box {
+    display: block;
+  }
 }
