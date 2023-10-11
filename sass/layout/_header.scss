@@ -1,44 +1,39 @@
 .header {
-    height: 95vh;
-    background-image: url(../img/ian-dooley-baloons-unsplash_1082.jpg); 
-    background-position: center;
-    background-size: cover;
+  height: 95vh;
+  background-image: url(../img/globe_city_3_1.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 75em) {
+    background-image: url(../img/globe_city_3_1.png);
+  }
+
+  &__text-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    @media (min-resolution: 192dpi) and (min-width: 37.5em),
-            (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-            (min-width: 75em) {
-        background-image: url(../img/ian-dooley-baloons-unsplash_2000_short.jpg);   
+    flex-direction: column;
+    justify-items: center;
+
+    background-color: rgba($color-white, 0.9);
+    border-radius: 3px;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+    padding: 4rem;
+    transform: skew(-6deg);
+
+    @include respond(tab-port) {
+      transform: skew(-4deg);
     }
 
-    &__text-box{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-       
-
-        background-color: rgba($color-white, .9);    
-        border-radius: 3px;
-        box-shadow: 0 .5rem 1rem rgba($color-black, .4); 
-        padding: 4rem;  
-        transform: skew(-6deg);
-        
-        @include respond(tab-port) {
-            transform: skew(-4deg); 
-        }
-
-        @include respond(phone) {
-            transform: skew(0);
-            width: 95%;  
-
-
-        }
-
-        @include respond(phone-small) {
-        }
-
+    @include respond(phone) {
+      transform: skew(0);
+      width: 95%;
     }
-    
+
+    @include respond(phone-small) {
+    }
+  }
 }

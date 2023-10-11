@@ -29,10 +29,11 @@ $breakpoint argument choices:
     width: 100%; } }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     border-color: transparent; }
   50% {
-    border-color: #545454; } }
+    border-color: #1d214e; } }
 
 @keyframes show-sub {
   to {
@@ -80,7 +81,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #545454; }
+  color: #1d214e; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -119,14 +120,14 @@ body {
   text-decoration: none;
   transition: all 0.2s; }
 
-.btn--blue-prim {
+.btn--light-prim {
   display: block;
   text-align: center;
   width: 20rem;
   margin-right: auto;
   margin-left: auto;
-  color: #545454;
-  border: #545454 solid 3px;
+  color: #1d214e;
+  border: #1d214e solid 3px;
   font-size: 1.2em;
   margin-top: 2.5rem;
   font-weight: 700;
@@ -138,31 +139,31 @@ body {
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   letter-spacing: 3px; }
-  .btn--blue-prim:hover {
+  .btn--light-prim:hover {
     transform: translateY(-3px) skew(6deg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-  .btn--blue-prim:active {
+  .btn--light-prim:active {
     transform: translateY(-1px) skew(6deg);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   @media (max-width: 56.25em) {
-    .btn--blue-prim {
+    .btn--light-prim {
       transform: skew(4deg); }
-      .btn--blue-prim:hover {
+      .btn--light-prim:hover {
         transform: translateY(-3px) skew(4deg); }
-      .btn--blue-prim:active {
+      .btn--light-prim:active {
         transform: translateY(-1px) skew(4deg); } }
   @media (max-width: 37.3em) {
-    .btn--blue-prim {
+    .btn--light-prim {
       padding: 0.8rem 3rem;
       font-size: 1.4rem;
       width: 30rem;
       transform: skew(0); }
-      .btn--blue-prim:hover {
+      .btn--light-prim:hover {
         transform: skew(0); }
-      .btn--blue-prim:active {
+      .btn--light-prim:active {
         transform: skew(0); } }
   @media (max-width: 26.25em) {
-    .btn--blue-prim {
+    .btn--light-prim {
       font-size: 1.8rem;
       width: 40rem; } }
 
@@ -321,7 +322,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: url(../img/ian-dooley-baloons-unsplash_1082.jpg);
+  background-image: url(../img/globe_city_3_1.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -329,7 +330,7 @@ body {
   align-items: center; }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
     .header {
-      background-image: url(../img/ian-dooley-baloons-unsplash_2000_short.jpg); } }
+      background-image: url(../img/globe_city_3_1.png); } }
   .header__text-box {
     display: flex;
     flex-direction: column;
@@ -360,7 +361,7 @@ body {
       transform: skew(0); } }
   .heading-primary--main {
     overflow: hidden;
-    border-right: 0.25rem solid #545454;
+    border-right: 0.25rem solid #1d214e;
     white-space: nowrap;
     margin: 0 auto 0.5rem 0;
     letter-spacing: 0.3rem;
@@ -614,7 +615,8 @@ body {
       transition: all .3s; }
 
 .section-about-me {
-  background-image: linear-gradient(to left, #f8ece2, #f9d2ae);
+  background-color: #1d214e;
+  color: #f8cc92;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -675,7 +677,7 @@ body {
       height: 100%;
       object-fit: cover;
       object-position: center;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .section-about-me__photo img:hover {
         transform: scale(1.2); }
 
@@ -709,7 +711,7 @@ body {
   font-weight: 700;
   display: inline-block;
   color: transparent;
-  background-image: linear-gradient(to right, #873985, #712b6e, #5c1d58, #471044, #330430);
+  background-image: linear-gradient(to left, #b08727, #f6cc5a, #f5d875, #f5e38e, #dfd596);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;

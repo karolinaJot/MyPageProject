@@ -5,13 +5,13 @@
     transition: all 0.2s;
   }
 
-  &--blue-prim {
+  &--light-prim {
     display: block;
     text-align: center;
     width: 20rem;
     margin-right: auto;
     margin-left: auto;
-    color: $color-grey-dark;
+    color: $color-bule-dark-prim;
     // background-image: linear-gradient(
     //   to top,
     //   $color-blue-dark1,
@@ -28,7 +28,7 @@
     //   #4a4a4a,
     //   #545454
     // );
-    border: #545454 solid 3px;
+    border: $color-bule-dark-prim solid 3px;
     font-size: 1.2em;
     margin-top: 2.5rem;
     font-weight: 700;
