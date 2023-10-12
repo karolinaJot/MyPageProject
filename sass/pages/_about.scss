@@ -1,10 +1,11 @@
 .section-about {
   background-image: linear-gradient(
       to right,
-      rgba($color-orange-light2, 0.8),
-      rgba($color-orange-light1, 0.8)
+      rgba($color-blue-light-grad3, 0.5),
+      rgba($color-blue-dark-grad3, 0.5)
     ),
-    url(../img/ian-dooley-baloons-unsplash_1082.jpg);
+    url(../img/globe_hand_1.png);
+  // url(../img/ian-dooley-baloons-unsplash_1082.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -15,14 +16,16 @@
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
     background-image: linear-gradient(
         to right,
-        rgba($color-orange-light2, 0.8),
-        rgba($color-orange-light1, 0.8)
+        rgba($color-blue-light-grad3, 0.5),
+        rgba($color-blue-dark-grad3, 0.5)
       ),
-      url(../img/ian-dooley-baloons-unsplash_2000.jpg);
+      url(../img/globe_hand_1.png);
+    // url(../img/ian-dooley-baloons-unsplash_2000.jpg);
   }
 
   &__project-container {
-    background-color: rgba($color-white, 0.6);
+    background-color: rgba($color-bule-dark-prim, 0.9);
+    // background-color: rgba($color-white, 0.6);
     width: 90%;
     margin: 2rem auto;
     padding: 2rem 1.5rem;

@@ -44,6 +44,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
+    height: 100%;
   }
 
   &__text-container {
@@ -69,8 +70,8 @@
     display: flex;
     justify-content: space-between;
 
-    margin: 1rem 0;
-    padding: 0 3rem;
+    margin: 3rem 0 0 0;
+    // padding: 0 3rem 0 0;
   }
 
   &__photo {
