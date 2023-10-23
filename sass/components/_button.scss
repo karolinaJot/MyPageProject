@@ -89,7 +89,7 @@
     font-weight: 400;
     text-align: center;
     padding: 0.5rem;
-    border-radius: 50px;
+    border-radius: 0.3rem;
     display: block;
     color: $color-white;
     background-image: linear-gradient(
@@ -100,7 +100,7 @@
       #0c85a0,
       $color-blue-light
     );
-    box-shadow: 0 0 0.4rem rgba($color-black, 0.4);
+    // box-shadow: 0 0 0.2rem rgba(#a6e0ed, 0.3);
     text-transform: uppercase;
     letter-spacing: 2px;
 

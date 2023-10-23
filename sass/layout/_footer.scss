@@ -1,99 +1,94 @@
 .footer {
-      background-color: $color-grey-dark2;
-      padding: 8rem 0;
-      font-size: 1rem;
+  background-color: $color-blue-dark-footer;
+  padding: 8rem 0;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-brown-light-1;
+
+  &__img-box {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 0.8rem 1.2rem rgba($color-black, 0.4);
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__navigations {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    @include respond(phone) {
+      display: block;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1.8rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__link {
+    padding: 0.5rem;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-brown-light-1;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-yellow-light;
+      box-shadow: 0 0.8rem 1.2rem rgba($color-black, 0.4);
+      transition: all 0.3s;
+    }
+  }
+
+  &__description {
+    @include respond(phone) {
+      font-size: 1.8rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      span {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  &__email {
+    padding: 0.5rem;
+    &:link,
+    &:visited {
+      text-decoration: none;
       color: $color-brown-light-1;
+    }
 
-
-      &__img-box {
-          width: 10rem;
-          height: 10rem;
-          overflow: hidden;
-          margin-bottom: 2rem;
-          border-radius: 3px;
-          box-shadow: 0 .8rem 1.2rem rgba($color-black, .4);
-        }
-        
-        &__img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-          
-      }
-
-      &__navigations {
-          margin-bottom: 2rem;
-      }
-
-      &__list {
-          list-style: none;
-          text-decoration: none;
-          
-        }
-        
-        &__item {
-            display: inline-block;
-            
-            @include respond(phone) {
-              display: block; 
-              text-align: center;
-              padding: 1rem 0;
-              font-size: 1.8rem; 
-              
-            } 
-            
-            &:not(:last-child) {
-                margin-right: .5rem; 
-            }
-        }
-        
-        &__link {
-            padding: .5rem;
-            &:link, 
-            &:visited {
-                text-decoration: none;
-                color: $color-brown-light-1;
-            }
-
-            &:hover,
-            &:active {
-                color: $color-yellow-light;
-                box-shadow:  0 .8rem 1.2rem rgba($color-black, .4);
-                transition: all .3s;
-            }
-
-      }
-
-      &__description {
-          @include respond(phone){
-              font-size: 1.8rem;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-
-              span{
-                  padding-top: 1rem; 
-              }
-          }
-      }
-
-      &__email {
-            padding: .5rem;
-          &:link,
-          &:visited {
-              text-decoration: none;
-              color: $color-brown-light-1;
-          }
-
-          &:hover,
-            &:active {
-                color: $color-yellow-light;
-                box-shadow:  0 .8rem 1.2rem rgba($color-black, .4);
-                transition: all .3s;
-            }
-      }
+    &:hover,
+    &:active {
+      color: $color-yellow-light;
+      box-shadow: 0 0.8rem 1.2rem rgba($color-black, 0.4);
+      transition: all 0.3s;
+    }
+  }
 }
