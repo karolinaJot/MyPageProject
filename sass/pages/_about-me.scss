@@ -68,21 +68,20 @@
   &__photos-box {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
     margin: 3rem 0 0 0;
-    // padding: 0 3rem 0 0;
   }
 
   &__photo {
-    width: 20%;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0.8rem 1.2rem rgba($color-black, 0.4);
-    margin-top: 1rem;
+    width: 0;
 
     @include respond(phone) {
       width: 30%;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0.8rem 1.2rem rgba($color-black, 0.4);
+      margin-top: 1rem;
+      align-items: center;
     }
 
     img {

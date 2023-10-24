@@ -12,22 +12,7 @@
     margin-right: auto;
     margin-left: auto;
     color: $color-bule-dark-prim;
-    // background-image: linear-gradient(
-    //   to top,
-    //   $color-blue-dark1,
-    //   #1a526e,
-    //   #156b88,
-    //   #0c85a0,
-    //   $color-blue-light
-    // );
-    // background-image: linear-gradient(
-    //   to top,
-    //   #2c2c2c,
-    //   #363636,
-    //   #3f3f3f,
-    //   #4a4a4a,
-    //   #545454
-    // );
+
     border: $color-bule-dark-prim solid 3px;
     font-size: 1.2em;
     margin-top: 2.5rem;
@@ -149,9 +134,9 @@
   border-radius: 3px;
   &:link,
   &:visited {
-    color: $color-blue-dark1;
+    color: $color-green-light-grad2;
     display: inline-block;
-    border-bottom: 1.5px solid $color-blue-dark1;
+    border-bottom: 1.5px solid $color-green-light-grad2;
     padding: 3px 5px 0 5px;
   }
 
